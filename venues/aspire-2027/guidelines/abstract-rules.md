@@ -104,9 +104,9 @@ expected around **January 2027**.
 | Psychology and Counselling Award | Psychologist, counsellor or social worker; psychosocial fertility care topic | 1 awardee | USD 150, certificate |
 | Nursing Award | Nurse, midwife or student in those professions; Nursing category | 1 awardee | USD 150, certificate |
 
-The YIA and Best Oral/Poster awards are the relevant ones for a clinical cohort
-study. Note that YIA eligibility is by **author age**, so it should be checked
-early — it may influence which co-author is designated presenting author.
+**The Young Investigator Award is not being pursued** (SPEC.md Amendment 2).
+Best Oral / Best Poster remains relevant and requires no action — it is open to all
+presenters and shortlisting is done by the Scientific Committee.
 
 ---
 

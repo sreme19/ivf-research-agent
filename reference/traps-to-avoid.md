@@ -23,8 +23,14 @@ Compiled from §46–48 of `inbox/2026-08-29-esi-research-handoff.md`. The
    present it as prespecified.** This is the single most damaging thing this
    project could do. Cutoffs come from the locked SAP or from spline modelling,
    with the post-hoc status stated plainly.
-6. **Do not use clinical pregnancy as the only endpoint.** Live birth is primary.
-7. **Do not ignore live birth.**
+6. **Do not overstate what an implantation endpoint shows.** *(Revised 29 August
+   2026 — the primary endpoint was changed from live birth to implantation. See
+   `SPEC.md` Amendment 1.)* Implantation is an early surrogate. The manuscript must
+   state that the association with live birth was not assessed, and must not imply
+   it was. A finding about implantation is not a finding about a baby.
+7. **Do not let the discussion drift toward live birth.** Phrases like "improved
+   outcomes", "better success rates" or "clinical benefit" smuggle in an endpoint
+   that was not measured. Say "implantation".
 8. **Do not select confounders on univariate p-values alone.** Selection is
    clinically and causally justified. Check collinearity.
 9. **Do not infer effect modification from comparing subgroup p-values.** Test the

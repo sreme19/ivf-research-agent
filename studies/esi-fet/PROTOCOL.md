@@ -11,17 +11,17 @@ Compiled from `inbox/2026-08-29-esi-research-handoff.md`.
 ## Working title
 
 > ENDOMETRIAL STABILITY INDEX: DOES DYNAMIC CHANGE IN ENDOMETRIAL THICKNESS DURING
-> PROGESTERONE EXPOSURE PREDICT IMPLANTATION AND LIVE BIRTH FOLLOWING SINGLE
-> BLASTOCYST FROZEN EMBRYO TRANSFER
+> PROGESTERONE EXPOSURE PREDICT IMPLANTATION FOLLOWING SINGLE BLASTOCYST FROZEN
+> EMBRYO TRANSFER
 
-23 words — fits the ASPIRE 25-word limit with 2 words of headroom.
+20 words — fits the ASPIRE 25-word limit with 5 words of headroom.
 
-Manuscript alternatives (both also ≤25 words) in §2 of the handoff.
+Revised 29 August 2026: "AND LIVE BIRTH" removed. See Endpoints below.
 
 ## Objective
 
 To evaluate the association between dynamic changes in endometrial thickness during
-progesterone exposure and live birth following single blastocyst frozen embryo
+progesterone exposure and implantation following single blastocyst frozen embryo
 transfer, and to determine whether an Endometrial Stability Index provides
 incremental prognostic information beyond baseline endometrial thickness, patient
 characteristics and embryo morphology.
@@ -59,7 +59,7 @@ studying endometrial effects.
 - Known progesterone exposure duration
 - Known embryo grade
 - Known pregnancy outcome
-- Known live-birth outcome
+- **Known implantation outcome** (ultrasound performed and documented)
 
 ### Exclusion
 
@@ -118,17 +118,54 @@ subendometrial blood flow; peristalsis in waves/minute. Useful, but not gating.
 
 ## Endpoints
 
-**Primary: live birth per embryo transfer** (0/1).
+**Revised 29 August 2026.** Live birth was the primary endpoint in the original
+handoff (§28). It has been replaced by implantation at the investigator's
+direction. Rationale and trade-off recorded in `SPEC.md`, Amendment 1.
 
-Secondary: positive β-hCG; biochemical pregnancy; clinical pregnancy (predefined);
-implantation; ongoing pregnancy (gestational-age threshold predefined);
-miscarriage. Also gestational age at delivery and birth weight where available.
+### Primary: implantation, per single blastocyst transferred (0/1)
+
+**Definition — REQUIRES CLINICIAN CONFIRMATION.** "Implantation" is used
+inconsistently in this literature and an ambiguous definition is a reviewer
+objection waiting to happen. The definition must be fixed before the SAP is locked.
+
+Proposed: presence of at least one **intrauterine gestational sac** on transvaginal
+ultrasound, assessed at the centre's standard first scan (~5–6 weeks' gestation).
+
+Because every cycle in the primary analysis is a **single** embryo transfer, the
+implantation rate per transfer and per embryo are identical, and the endpoint is a
+clean binary. This is one of the genuine advantages of restricting to SET.
+
+Alternatives to rule out explicitly:
+- Gestational sac **with** fetal pole
+- Gestational sac **with** fetal cardiac activity *(this is clinical pregnancy, not
+  implantation — do not conflate)*
+
+### Secondary
+
+Positive β-hCG; biochemical pregnancy; clinical pregnancy (predefined); ongoing
+pregnancy (gestational-age threshold predefined); miscarriage.
+
+### Collected but NOT analysed in this study
+
+`LIVE_BIRTH`, `GEST_AGE_DELIVERY`, `BIRTH_WEIGHT` are collected where available and
+retained in the dataset, but form no part of this study's analysis. They are kept
+because a column costs nothing to carry and cannot be reconstructed later — and
+because the downstream Fertility & Reproduction manuscript will very likely be
+asked for a live-birth endpoint.
+
+### Known trade-off
+
+The original handoff (§47) lists using a softer endpoint instead of live birth as a
+methodological trap, and implantation is softer than clinical pregnancy. This is a
+deliberate, recorded decision, not an oversight. The manuscript must state plainly
+that implantation is an early surrogate and that the association with live birth
+was not assessed. Do not let a discussion section drift into implying it was.
 
 ## Hypotheses — direction-neutral
 
-- **H0:** ESI is not independently associated with live birth.
+- **H0:** ESI is not independently associated with implantation.
 - **H1:** The magnitude and/or direction of ESI is independently associated with
-  live birth after adjustment.
+  implantation after adjustment.
 
 The analysis determines whether compaction, stability or expansion is favourable,
 whether an optimal range exists, whether extremes in either direction are
@@ -168,6 +205,10 @@ comparison is presented. See `../../reference/`.
 6. Is PGT-A common enough to power a euploid subgroup?
 7. Is serum P4 measured routinely before transfer?
 8. Which FET protocols are in use, and in what proportions?
-9. Is live-birth follow-up complete, or are some patients delivered elsewhere?
-10. Who are the co-authors, and is any of them under 40 and Asia-Pacific resident
-    (Young Investigator Award eligibility)?
+9. **What is the centre's exact definition of implantation, and at what
+   gestational age is the first scan performed?** This must be fixed before the
+   SAP is locked.
+10. Is the first-scan result documented consistently enough to serve as a primary
+    endpoint, including for cycles that were β-hCG negative and therefore never
+    scanned? *(Those are implantation failures, not missing data — confirm they
+    can be identified.)*

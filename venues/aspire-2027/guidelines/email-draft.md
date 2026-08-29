@@ -26,9 +26,8 @@ Specifically, I would appreciate confirmation of:
    categories with separate eligibility criteria.
 8. Registration requirements and deadlines for the presenting author.
 
-The work is a retrospective cohort study of dynamic endometrial change during
-progesterone exposure and live birth following single blastocyst frozen embryo
-transfer.
+The work is a cohort study of dynamic endometrial change during progesterone
+exposure and implantation following single blastocyst frozen embryo transfer.
 
 Thank you for your assistance.
 

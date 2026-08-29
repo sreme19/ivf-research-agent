@@ -73,8 +73,9 @@ Report the count as `287 / 300 — 13 words of headroom`, never as "within limit
       is eligible with disclosure; **international** prior presentation may
       preclude acceptance
 - [ ] Presenting author identified and able to register by the deadline
-- [ ] Young Investigator Award eligibility checked — author under 40 on the first
-      congress day and resident in the Asia Pacific region
+
+*Young Investigator Award eligibility is NOT checked — the investigator has
+declined to pursue it (SPEC.md Amendment 2). Do not raise it.*
 
 ### 4. Check scientific compliance too
 
@@ -84,7 +85,9 @@ A rule-compliant abstract can still be a bad abstract. Also run the checks in
 - No claim that dynamic endometrial change has never been studied
 - No description of ultrasound thickness as "receptivity"
 - No ESI cutoff presented as prespecified unless it is in the locked SAP
-- Live birth reported as the primary endpoint, not clinical pregnancy
+- **Implantation** reported as the primary endpoint, with its definition stated
+  (SPEC.md Amendment 1 changed this from live birth — do not flag its absence as
+  an error, but DO flag any wording that implies live birth was measured)
 - No number in the draft that is not traceable to a file in `outputs/`
 
 Flag any fabricated or unsourced number as a **blocking** failure. This outranks

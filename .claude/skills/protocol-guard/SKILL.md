@@ -20,6 +20,10 @@ Checks the science, not the formatting. For venue formatting use `aspire-complia
 **Blocking** — would constitute misconduct or would sink the paper in review:
 - A cutoff, subgroup or endpoint that appears in results but not in the SAP,
   presented as prespecified
+- **Any wording implying live birth was measured.** It was not — the primary
+  endpoint is implantation (SPEC.md Amendment 1). Watch for "improved outcomes",
+  "success rates", "clinical benefit", "take-home baby". Each of these smuggles in
+  an unmeasured endpoint.
 - Any number not traceable to `outputs/`
 - Any claim of priority over prior compaction literature
 - Patient identifiers anywhere in the repo
@@ -29,6 +33,7 @@ Checks the science, not the formatting. For venue formatting use `aspire-complia
 - Repeated cycles unaddressed
 - Interaction inferred from subgroup p-values
 - Direction-of-effect assumed rather than tested
+- Implantation presented without acknowledging it is an early surrogate
 
 **Advisory** — improves the paper:
 - Terminology drift toward "stability is good" or "receptivity"

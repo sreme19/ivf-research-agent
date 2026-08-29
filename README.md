@@ -7,9 +7,11 @@ Zero-API and skill-driven, following the same pattern as `job-hunt-agent`,
 a Claude Code session running one of the skills in `.claude/skills/`; the repo
 itself only stores evidence, guidelines, protocols and drafts.
 
-**Current work:** the Endometrial Stability Index (ESI) study, targeted at the
-ASPIRE 2027 congress in Yokohama (abstract deadline **6 November 2026**), and
-subsequently at a peer-reviewed journal.
+**Current work:** the Endometrial Stability Index (ESI) study — does dynamic change
+in endometrial thickness during progesterone exposure predict **implantation** after
+single blastocyst FET? Data from **Indira IVF** (India). Targeted at the ASPIRE 2027
+congress in Yokohama (abstract deadline **6 November 2026**), then at Fertility &
+Reproduction.
 
 ---
 

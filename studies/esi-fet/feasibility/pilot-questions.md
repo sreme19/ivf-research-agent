@@ -29,7 +29,7 @@ what is usually recorded.
 | 2 | **How consistently is transfer-day ET (ET2) recorded?** | | | |
 | 3 | Is progesterone start **time** available, not just date? | | | |
 | 4 | Are D5/D6 and Gardner grades reliably available? | | | |
-| 5 | Is live-birth follow-up complete? | | | |
+| 5 | **Is the first-scan / implantation outcome documented consistently?** Including for β-hCG-negative cycles that were never scanned? | | | |
 | 6 | Are PGT-A data available? | | | |
 | 7 | Is serum P4 measured routinely before transfer? | | | |
 | 8 | Are endometrial patterns recorded at both scans? | | | |
@@ -52,7 +52,8 @@ what is usually recorded.
 |---|---|
 | ET2 missing in >30% of cycles | Retrospective study not viable. Go to the ROADMAP fallbacks. |
 | Progesterone **time** unavailable | Exposure duration in days only. Acceptable; state as a limitation. |
-| Live-birth follow-up incomplete | Primary endpoint at risk. Quantify before deciding. |
+| Implantation outcome inconsistently documented | **Primary endpoint at risk.** Quantify before deciding. |
+| β-hCG-negative cycles not identifiable | Cannot distinguish implantation failure from missing data. Serious — this determines whether the endpoint is usable. |
 | PGT-A rare | Euploid subgroup unpowered. Drop it from the SAP rather than run it underpowered. |
 | Serum P4 not routine | Drop from the adjustment set. Do not order non-routine tests to fill a retrospective dataset. |
 | Many women with multiple FETs | Decides SAP §5 — first-cycle-only vs clustered. |

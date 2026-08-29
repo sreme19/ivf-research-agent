@@ -24,15 +24,21 @@ and is labelled post-hoc in the manuscript text, not merely in a footnote.
 ## 1. Descriptive analysis
 
 Mean ± SD for approximately normal continuous variables; median (IQR) for skewed;
-n (%) for categorical. Compared by live birth vs. no live birth.
+n (%) for categorical. Compared by **implantation vs. no implantation**.
 
 **Unadjusted comparisons are descriptive only** and do not support any conclusion
 about ESI.
 
 ## 2. Primary analysis
 
-ESI (%) as a **continuous** exposure against **live birth**, by multivariable
-logistic regression.
+ESI (%) as a **continuous** exposure against **implantation** (primary endpoint,
+see `PROTOCOL.md`), by multivariable logistic regression.
+
+Implantation is defined as the presence of at least one intrauterine gestational
+sac on transvaginal ultrasound at the centre's standard first scan. **[Definition
+pending clinician confirmation — must be fixed before lock.]** Cycles that were
+β-hCG negative and therefore never scanned are coded as implantation failures
+(`0`), not as missing.
 
 Reported as an adjusted odds ratio per clinically meaningful ESI increment
 (increment to be prespecified — **[TBD: propose per 5% or per 10%]**) with 95% CI.
@@ -41,8 +47,8 @@ Reported as an adjusted odds ratio per clinically meaningful ESI increment
 
 ## 3. Shape of the relationship
 
-**Restricted cubic splines.** X: ESI %. Y: adjusted predicted probability of live
-birth.
+**Restricted cubic splines.** X: ESI %. Y: adjusted predicted probability of
+implantation.
 
 Knot number and placement prespecified here: **[TBD — conventionally 3–5 knots at
 standard percentiles]**.
@@ -64,6 +70,13 @@ Collinearity checked.
 
 Baseline ET1 must be in the model. Without it, ESI is confounded by starting
 thickness by construction.
+
+**Note on the endpoint change.** With implantation rather than live birth as the
+outcome, the event rate rises substantially — implantation occurs in a larger
+fraction of transfers than live birth does. More events per covariate means the
+adjustment set can be more generous before overfitting becomes a concern. The
+statistician should recalculate events-per-variable on the implantation rate, not
+a live-birth rate.
 
 ## 5. Repeated cycles
 
@@ -93,6 +106,11 @@ comparison; decision-curve analysis if a clinical tool is proposed.
 **The question is not whether ESI reaches p < 0.05. It is whether knowing ESI adds
 clinically meaningful information.** A statistically significant ESI that moves the
 AUC from 0.641 to 0.648 is a null result in substance and should be reported as one.
+
+Note that a model predicting implantation is predicting an earlier, more
+endometrium-proximal event than live birth. If ESI has any real signal, this is
+where it should be most visible — which cuts both ways: a null result here is
+correspondingly harder to attribute to endpoint dilution.
 
 If this section is executed, **TRIPOD applies** — including reporting the full
 model coefficients and intercept.
@@ -150,6 +168,9 @@ acceptable if declared]**.
 - [ ] ESI increment for the reported odds ratio
 - [ ] Spline knot number and placement
 - [ ] Repeated-cycle approach (§5)
+- [ ] **Implantation definition — gestational sac only, or sac plus fetal pole?**
+      *(Primary endpoint. Nothing locks until this does.)*
+- [ ] Confirmation that β-hCG-negative, never-scanned cycles are coded `0`, not `NA`
 - [ ] Ongoing-pregnancy gestational-age threshold
 - [ ] Clinical-pregnancy definition
 - [ ] Multiplicity position (§12)
@@ -158,3 +179,8 @@ acceptable if declared]**.
 ## Amendments
 
 _None. Plan not yet locked._
+
+**Pre-lock revision, 29 August 2026:** primary endpoint changed from live birth to
+implantation at the investigator's direction. Made before the lock date, so this is
+a revision to a draft rather than a formal amendment. Recorded here for the audit
+trail. See `SPEC.md` Amendment 1 for rationale.

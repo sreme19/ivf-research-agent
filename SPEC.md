@@ -42,13 +42,13 @@ methods tooling wins.
 **Why:** the repo sits next to PHI. A remote gets added only after the gitignore
 has been proven against a real extract without leaking. Not before.
 
-## 5. Live birth is the primary endpoint
+## 5. Implantation is the primary endpoint
 
-Not clinical pregnancy. Not implantation.
+**SUPERSEDED — see Amendment 1.** Originally recorded as: live birth is primary,
+not clinical pregnancy, not implantation.
 
-**Why:** it is the clinically meaningful outcome, and using anything softer is a
-known reviewer objection in this literature. Secondary endpoints are collected
-but do not become the headline if the primary is null.
+Current position: **implantation is the sole primary endpoint.** Live birth is
+collected where available but is not analysed in this study.
 
 ## 6. ESI is modeled continuously first
 
@@ -91,4 +91,49 @@ material don't silently overwrite reasoning that was built on the earlier versio
 
 ## Amendments
 
-_None yet._
+### Amendment 1 — 29 August 2026 — primary endpoint changed to implantation
+
+**Changes decision 5.** Primary endpoint changed from live birth to implantation,
+at the investigator's direction. Live birth removed from the analysis entirely; it
+remains a collected field only.
+
+**Rationale for:**
+
+- **Feasibility, which is the binding constraint.** Live birth requires 9–12 months
+  of follow-up after transfer, so a live-birth cohort can only include transfers
+  from roughly a year ago or earlier. Implantation is known ~5 weeks post-transfer.
+  Against a 6 November 2026 abstract deadline this materially widens the eligible
+  cohort.
+- **Biological proximity.** Implantation is the event closest to the endometrial
+  mechanism ESI is hypothesised to reflect. Live birth adds obstetric and fetal
+  causes of failure that have nothing to do with the endometrium at transfer.
+  If ESI has real signal, implantation is where it should be most detectable.
+- **Statistical power.** A higher event rate yields more events per covariate,
+  permitting a more complete adjustment set for the same sample size.
+
+**Rationale against, recorded honestly:**
+
+- The source handoff (§28, §47) explicitly names a softer endpoint in place of live
+  birth as a methodological trap. Implantation is softer than clinical pregnancy.
+- Live birth is the outcome patients and clinicians care about. Implantation is a
+  surrogate.
+- The downstream Fertility & Reproduction manuscript will very likely be asked for
+  a live-birth analysis. This decision defers that requirement; it does not remove it.
+
+**Mitigations applied:**
+
+- `LIVE_BIRTH`, `GEST_AGE_DELIVERY` and `BIRTH_WEIGHT` are retained as collected but
+  unanalysed fields, so the live-birth analysis remains possible later without
+  re-extraction.
+- The manuscript must state plainly that implantation is an early surrogate and that
+  the association with live birth was not assessed. `protocol-guard` enforces this.
+- `reference/traps-to-avoid.md` items 6 and 7 rewritten to reflect the change rather
+  than being deleted, so the trade-off stays visible.
+
+**Decided by:** investigator. **Recorded by:** Claude, 29 August 2026.
+
+### Amendment 2 — 29 August 2026 — Young Investigator Award not pursued
+
+Award eligibility checks removed from the `aspire-compliance` skill at the
+investigator's direction. Best Oral / Best Poster eligibility is unaffected — it is
+open to all presenters and requires no action.

@@ -16,10 +16,10 @@ filename and the script that produced it.
 | File | Content |
 |---|---|
 | `figure1_flow.*` | Patient flow diagram — STROBE item 13 |
-| `table1_baseline.*` | Baseline characteristics by live birth |
+| `table1_baseline.*` | Baseline characteristics by implantation outcome |
 | `table2_endometrial_embryo.*` | Endometrial and embryo characteristics |
 | `figure2_esi_distribution.*` | Distribution of ESI |
-| `figure3_spline.*` | **RCS: ESI → adjusted live-birth probability** |
+| `figure3_spline.*` | **RCS: ESI → adjusted implantation probability** |
 | `table3_multivariable.*` | Primary logistic regression |
 | `figure4_roc.*` | Model A/B/C/D comparison |
 | `table4_subgroups.*` | Prespecified subgroups and sensitivity analyses |
