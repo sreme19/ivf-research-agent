@@ -1,38 +1,142 @@
-# Evidence table — prior work on endometrial change after progesterone
+# Evidence table — prior work on endometrial change after progesterone ("endometrial compaction")
 
-**Empty. Run the `literature-scan` skill.**
+Compiled 29 August 2026. Every row below corresponds to a record whose abstract or
+full text was retrieved (via Europe PMC, PubMed Central, or the publisher site).
+Rows are marked `[TITLE ONLY — NOT RETRIEVED]` where only bibliographic metadata
+was obtained. Unverified fields are marked `[UNVERIFIED]`.
 
-This table is what allows the novelty claim to be stated honestly. The handoff is
-explicit (§3, §47): the paper must **not** claim dynamic endometrial change has
-never been studied. It has been, repeatedly, with conflicting results — including
-large cohorts and euploid-transfer analyses that found little or no association.
+**Headline for positioning:** endometrial compaction is a well-established,
+heavily studied phenomenon with ~25+ primary cohort studies and **four**
+systematic reviews/meta-analyses between 2019 and 2026. It has already been
+studied specifically in **single euploid blastocyst FET** (Zilberberg 2020,
+Riestenberg 2021, Shah 2022, Jin Z 2021), and it has already been modelled
+**continuously as a percent change ratio** (Bu 2019, Jin Z 2021, Kaye 2021,
+Pan 2025). The identical formula `[(ET2 − ET1)/ET1] × 100` appears verbatim in
+Pan 2025 and in substance in Bu 2019, Jin Z 2021 and Ju 2023.
 
-Novelty comes from method and endpoint, not from priority.
+---
 
-## Format
+## Legend for the four positioning questions
 
-| Author, year | Design | N | Population | Change definition | Endpoint | Adjustment | Finding | Limitations |
-|---|---|---|---|---|---|---|---|---|
+- **Q1** — Endpoint: implantation (IMP) / clinical pregnancy (CPR) / ongoing pregnancy (OPR) / live birth (LBR)
+- **Q2** — Embryo quality adjusted? Yes / No / Unclear
+- **Q3** — Change modelled continuously (CONT) or dichotomised (DICH)?
+- **Q4** — Euploid-only cohort analysed? Yes / No / Subgroup
 
-## Grouping
+---
 
-Sort into **positive**, **null**, and **mixed** findings. The conflict is the
-story — the Introduction is built on making it visible, and the Discussion on
-explaining why this study's design addresses it.
+## POSITIVE FINDINGS (compaction associated with better outcomes)
 
-## Extraction targets
+| Author, year | Journal | Design | N | Population | Change definition | Endpoint | Adjustment | Finding | Q1 | Q2 | Q3 | Q4 | Limitations |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Haas J, 2019 | Fertil Steril 112:503–509 · [10.1016/j.fertnstert.2019.05.001](https://doi.org/10.1016/j.fertnstert.2019.05.001) · PMID 31248618 | Retrospective observational cohort | 274 FET cycles | HRT-prepared FET; blastocyst; unscreened; autologous [UNVERIFIED whether all single-ET] | ET1 = end of estrogen phase (transvaginal); ET2 = transfer day (**transabdominal**). Thresholds 5/10/15/20% compaction | Ongoing pregnancy | Unadjusted primary comparison; [UNVERIFIED] full covariate list | "Highly significant inverse correlation between the ongoing pregnancy rate and the change of endometrial thickness"; OPR rose monotonically as compaction increased | OPR | Unclear | Both (thresholds + trend) | No | Retrospective; **mixed ultrasound route (TVS→TAS) is a major measurement-error confound**; single centre |
+| Zilberberg E, 2020 (co-authors incl. Haas J, Casper RF) | Fertil Steril 113:990–995 · [10.1016/j.fertnstert.2019.12.030](https://doi.org/10.1016/j.fertnstert.2019.12.030) · PMID 32386621 | Observational cohort | 234 HRT-FET cycles | **Elective single euploid (PGT-A) blastocyst**, hormonally prepared | ET1 = end of estrogen phase; ET2 = after 6 d progesterone, transfer day. Thresholds incl. ≥15% | Ongoing pregnancy | [UNVERIFIED] — adjustment not confirmed from retrieved text | OPR 51.5% with ≥15% compaction vs 30.2% with no compaction; significant at all thresholds tested | OPR | Unclear | DICH (multiple thresholds) | **Yes** | Single centre; retrospective image review; same group/protocol as Haas 2019 (mixed US route) |
+| Yaprak E, 2023 | Hum Fertil 26:550–556 · [10.1080/14647273.2021.1966703](https://doi.org/10.1080/14647273.2021.1966703) · PMID 34405774 | Retrospective cohort | 283 (89 compaction / 194 no compaction) | Artificial FET; mixed embryo stage; unscreened | Decrease in EMT progesterone-start → transfer day | **Live birth** | Multivariate adjusted for age, **embryo stage**, endometrial thickness | LBR 23.6% vs 13.4%, p=0.039; remained significant on multivariate analysis | LBR | Partial (stage, not morphology grade) | DICH | No | Small; retrospective; low overall LBR; embryo *grade* not adjusted |
+| Youngster M, 2022 | J Assist Reprod Genet 39:1909–1916 · [10.1007/s10815-022-02544-7](https://doi.org/10.1007/s10815-022-02544-7) · PMID 35727423 | **Prospective** cohort | 71 women | **Unstimulated natural cycle** FET; [UNVERIFIED] stage/ploidy mix | Compaction from ovulation onward; observed as early as day 3 post-ovulation | Clinical & ongoing pregnancy | [UNVERIFIED] | CPR 0.58 vs 0.16 (p<0.001); OPR 0.52 vs 0.13 (p<0.001). 44% compacted | CPR/OPR | Unclear | DICH | No | Very small N; effect size implausibly large vs all other literature; natural cycle only |
+| Ju W, 2023 | J Assist Reprod Genet 40:1649–1660 · [10.1007/s10815-023-02809-9](https://doi.org/10.1007/s10815-023-02809-9) · PMID 37140828 | Retrospective cohort | 1,420 artificial FET cycles | Mixed cleavage (P+3) and blastocyst (P+5); **multiple embryos allowed**; unscreened; autologous | EC = −(T2−T1)/T1 × 100%; ≥5% = compaction; also 10%, 15% strata | Clinical pregnancy | Adjusted for age, BMI, AMH, **number of high-quality embryos transferred**, total embryos transferred | CPR 55.1% (compaction) vs 43.4% (no change); non-compaction aOR 0.617 (95% CI 0.488–0.779, p=0.001) | CPR | **Yes** (count of high-quality embryos) | DICH | No | **Transabdominal** ultrasound only ("less precise than vaginal"); LBR not assessed; retrospective selection bias |
+| Moeinaddini S, 2025 | Int J Reprod Biomed 23:141–152 · [10.18502/ijrm.v23i2.18484](https://doi.org/10.18502/ijrm.v23i2.18484) · PMID 40371359 | Cross-sectional | 100 women | HRT-FET, 1st/2nd cycle; [UNVERIFIED] stage/number/ploidy | EMT progesterone-start vs transfer day; strata 10–15% and >15% compaction | Biochemical, clinical, ongoing pregnancy | Logistic regression; [UNVERIFIED] covariates | Significant effect of EC 10–15% (p=0.02/0.01/0.01) and EC >15% (p=0.002/0.001/0.002) on biochemical/clinical/ongoing pregnancy | CPR/OPR | Unclear | DICH | No | Very small; cross-sectional; single centre; no live birth |
+| Akbari Sene A, 2026 | Gynecol Obstet Invest 91:251–258 · [10.1159/000547321](https://doi.org/10.1159/000547321) · PMID 40659012 | **Prospective** cohort | 90 women <40 | HRT-FET; excluded uterine/genetic factors; [UNVERIFIED] stage/number/ploidy | Compaction after progesterone administration; [UNVERIFIED] exact cutoff | Biochemical/clinical pregnancy; LBR secondary | Compared serum progesterone; [UNVERIFIED] multivariable model | Biochemical 37.3% vs 15.4% (p=0.022); clinical 33.3% vs 15.4%; **LBR 21.6% vs 7.7%, p=0.072 (NS)** | CPR (LBR NS) | Unclear | DICH | No | Very small; single centre; **live birth not significant** |
+| Etezadi A, 2025 | J Obstet Gynaecol India 75(S1):198–205 · [10.1007/s13224-024-02064-7](https://doi.org/10.1007/s13224-024-02064-7) · PMID 40390884 | Prospective cohort | 253 patients | ART embryo transfer, Tehran; [UNVERIFIED] fresh vs frozen, stage, number | Compaction strata 5/10/15/20% | Chemical & clinical pregnancy | [UNVERIFIED] | Compaction groups had significantly higher chemical and clinical pregnancy rates (p<0.05) | CPR | Unclear | DICH | No | [UNVERIFIED] design detail; no live birth; reporting sparse |
+| Jin Q, 2025 (non-CE subgroup only) | Front Endocrinol 16:1554201 · [10.3389/fendo.2025.1554201](https://doi.org/10.3389/fendo.2025.1554201) · PMID 40458182 | Retrospective cohort | 769 patients (CE vs non-CE) | FET after hysteroscopy; [UNVERIFIED] stage/number/ploidy | Compaction, progesterone-start → transfer | CPR, OPR, LBR | Multivariable binary logistic regression on clinical covariates | **In patients WITHOUT chronic endometritis:** CPR aOR 1.623 (1.052–2.504); OPR aOR 2.193 (1.403–3.429); **LBR aOR 2.244 (1.431–3.520)** | LBR | Unclear | DICH | No | Retrospective; selected hysteroscopy population; see NULL section for the CE arm |
 
-For each study, the four questions that matter for positioning:
+---
 
-1. Was **live birth** the endpoint, or only clinical pregnancy?
-2. Was **embryo quality** adjusted for?
-3. Was change modelled **continuously**, or dichotomised at an arbitrary cutoff?
-4. Was a **euploid-only** cohort analysed?
+## NULL FINDINGS (no association)
 
-The gap this study fills is defined by the answers.
+| Author, year | Journal | Design | N | Population | Change definition | Endpoint | Adjustment | Finding | Q1 | Q2 | Q3 | Q4 | Limitations |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Riestenberg C, 2021 | J Assist Reprod Genet 38:407–412 · [10.1007/s10815-020-02043-7](https://doi.org/10.1007/s10815-020-02043-7) · PMID 33389380 | Retrospective cohort | 259 cycles | **Single euploid (PGT-A) medicated FET** | **Transvaginal** at both timepoints; ≥5% compaction. 16.6% compacted, 58.7% expanded, 24.7% unchanged | **Live birth** | [UNVERIFIED] — no multivariable adjustment confirmed | LBR 58.1% (compaction) vs 54.7% (no change) vs 58.6% (expansion), **p=0.96**. CPR and miscarriage also comparable | LBR | Unclear/No | DICH | **Yes** | Retrospective; single centre; modest N; only 43 compaction cycles |
+| Shah JS, 2022 | Hum Reprod 37:980–987 · [10.1093/humrep/deac060](https://doi.org/10.1093/humrep/deac060) · PMID 35357436 | **Prospective observational** | 186 participants | **Single euploid FET**; programmed n=89, modified natural n=97 | ET1 transvaginal within 1 d of progesterone start; ET2 **transabdominal** at transfer. Thresholds >0, ≥5, ≥10, ≥15, ≥20% (54/45/35/28/21% of women) | **Live birth** | [UNVERIFIED] full model; stratified by protocol | **Compaction not predictive of live birth at any threshold**; same result in both protocol subgroups | LBR | Unclear | DICH (5 thresholds) | **Yes** | Single centre; not powered for small effects; mixed US route at ET2; authors warn compaction assessment "may prompt unnecessary cycle cancellation" |
+| Ye J, 2020 | Front Endocrinol 11:546232 · [10.3389/fendo.2020.546232](https://doi.org/10.3389/fendo.2020.546232) · PMID 33193080 | Retrospective observational | **4,465** first FET cycles | Artificial, EP-replacement and natural cycle protocols; unscreened; [UNVERIFIED] embryo number | **Transvaginal** 1 day before progesterone and on FET day; increase / decrease / stable | Clinical pregnancy + **live birth** | [UNVERIFIED] multivariable model | EP cycles CPR 48.4/51.3/50.7% (p=0.48); natural 49.2/52.0/48.9% (p=0.49). LBR 40.9/45.9/42.6% (p=0.16) and 44.2/44.8/42.1% (p=0.66). No association | LBR | Unclear | DICH (3 categories) | No | Retrospective; older cohort (2010–2015); unscreened embryos |
+| Olgan S, 2022 | Reprod Biomed Online 45:81–87 · [10.1016/j.rbmo.2022.02.025](https://doi.org/10.1016/j.rbmo.2022.02.025) · PMID 35501270 | **Prospective** cohort | 204 patients | HRT vitrified-warmed ET; [UNVERIFIED] stage/number/ploidy | **Transvaginal** at both timepoints | Ongoing pregnancy | [UNVERIFIED] | OPR compaction 58.1%, expansion 56.9%, no change 60.0%, **p=0.932** | OPR | Unclear | DICH | No | Single centre; no live birth reported |
+| Aslih N, 2024 | J Clin Med 13:7254 · [10.3390/jcm13237254](https://doi.org/10.3390/jcm13237254) · PMID 39685713 | **Prospective** observational | 247 FET cycles | Hormonal (102) and ovulatory (145) FET; [UNVERIFIED] stage/number/ploidy | **Transvaginal**; compaction = any decrease from end of proliferative phase to ET | Chemical, clinical, ongoing pregnancy | Predictor analysis of cycle outcomes | Compaction in 37.2%. Chemical 48.9 vs 46.4%; clinical 32.6 vs 41.3%; ongoing 29.5 vs 28.9% — **all NS**. Outcome drivers were maternal age, protocol, EMT on ET day | CPR/OPR | Unclear | DICH (any decrease) | No | Moderate N; no live birth; mixed protocols |
+| Pan P, 2025 | Hum Reprod Open 2025:hoaf039 · [10.1093/hropen/hoaf039](https://doi.org/10.1093/hropen/hoaf039) · PMID 40656207 | Retrospective cohort — **largest to date** | **16,453** HRT-FET cycles (9,390 D3; 7,063 D5/D6) | Autologous HRT-FET; **majority 2 embryos**; cleavage and blastocyst; **PGT excluded (unscreened)** | **Transvaginal only**; EMT1 = progesterone-start day, EMT2 = transfer day; change ratio **(EMT2−EMT1)/EMT1 × 100%** — the identical ESI formula. Strata: ≥5% compaction / ±5% no change / ≥5% expansion | **Live birth per ET cycle** | **Inverse probability weighting**; stratified by maternal age, EMT, **embryo quality**, embryo number, developmental stage | Compaction group had the **lowest** hCG-positive and clinical pregnancy rates. D3 expansion → higher LBR (OR 1.166, 95% CI 1.070–1.271, p=0.001). D5/D6: minimal association between EMT change and LBR. Compaction ≥15% significantly reduced D3 LBR | LBR | **Yes** | DICH (but ratio computed continuously) | No (PGT excluded) | Unscreened embryos only; retrospective; excluded EMT <7 mm; single centre |
+| Jin Q, 2025 (chronic endometritis arm) | Front Endocrinol 16:1554201 · [10.3389/fendo.2025.1554201](https://doi.org/10.3389/fendo.2025.1554201) · PMID 40458182 | Retrospective cohort | Subset of 769 | Treated chronic endometritis, FET | Compaction, progesterone-start → transfer | CPR, OPR, LBR | Multivariable logistic regression | **All null in CE patients:** biochemical aOR 1.020 (0.639–1.627); clinical aOR 1.028 (0.643–1.643); ongoing aOR 0.970 (0.600–1.569); **live birth aOR 0.881 (0.545–1.423)** | LBR | Unclear | DICH | No | Subgroup; retrospective; hysteroscopy-selected |
+| Huang J, 2020 | Ann Transl Med 8:1590 · [10.21037/atm-20-1459](https://doi.org/10.21037/atm-20-1459) · PMID 33437789 | Retrospective cohort | **2,768** first mNC-FET cycles | Regular ovulatory women, **modified natural cycle**; [UNVERIFIED] stage/number | EMT % change from **hCG trigger** to transfer: >5% decrease (405) / ±5% (1,259) / >5% increase (1,104) | **Live birth** | Multiple regression | LBR 39.8 / 41.9 / 42.4%, **p=0.649**. No association with live birth, clinical pregnancy or miscarriage | LBR | Unclear | DICH | No | Reference point is hCG trigger, not progesterone start — not strictly comparable; retrospective |
+| Lam MT, 2022 | J Ultrasound Med 41:1455–1463 · [10.1002/jum.15830](https://doi.org/10.1002/jum.15830) · PMID 34529280 | Retrospective | 268 women | First IVF, **fresh ET** (not FET) | EMT and **endometrial volume**, hCG day → transfer day, single operator | **Live birth** | Multivariate | Neither thickness nor volume compaction were significant predictors of live birth | LBR | Unclear | [UNVERIFIED] | No | Fresh ET; old cohort (2005–2006); small |
+| Li X, 2023 | Front Endocrinol 14:1118044 · [10.3389/fendo.2023.1118044](https://doi.org/10.3389/fendo.2023.1118044) · PMID 37822604 | **Prospective** | 230 first FET cycles | Natural cycle FET | Multi-parameter ultrasound (thickness, volume, VI/FI/VFI, peristalsis) ovulation day → transfer day | Clinical pregnancy | Group comparison | EMT **increased** overall (11.26→11.89 mm, p<0.001) while volume and blood flow decreased. **"No significant difference was found in the pregnancy probability among the different absolute change groups."** | CPR | No | DICH (absolute change groups) | No | Natural cycle only; no live birth; thickness change confounded by volume change |
+| Gill P, 2023 | Reprod Biomed Online 46:283–288 · [10.1016/j.rbmo.2022.11.010](https://doi.org/10.1016/j.rbmo.2022.11.010) · PMID 36535879 | Retrospective cohort | 252 singleton live births | Fresh or frozen ET; **obstetric outcome study** | Compaction ≥10%; 48% compacted | **Preterm birth** (+ placenta-mediated complications) | Adjusted for maternal age, parity, BMI, **embryo score**, fresh vs frozen | Preterm birth 13% vs 6%, p=0.09; adjusted OR 1.86 (95% CI 0.64–5.38). Placental complications 29.5% vs 20%, p=0.08. **No association** | Obstetric | **Yes** (embryo score) | DICH | No | Small; obstetric not implantation endpoint; underpowered |
 
-## Rules
+---
 
-Every entry needs a verifiable source. Mark unconfirmed entries `[UNVERIFIED]`.
-Do not summarise a paper that has not been retrieved. Record the search strategy
-and date — the manuscript will need it.
+## MIXED / OPPOSITE-DIRECTION FINDINGS
+
+| Author, year | Journal | Design | N | Population | Change definition | Endpoint | Adjustment | Finding | Q1 | Q2 | Q3 | Q4 | Limitations |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Bu Z, 2019 | Reprod Biol Endocrinol 17:99 · [10.1186/s12958-019-0545-0](https://doi.org/10.1186/s12958-019-0545-0) · PMID 31767010 | Observational cohort | **3,091** first FET cycles | **Single frozen-thawed blastocyst** — closest population match to ESI; unscreened; EP and natural cycle protocols | **Transvaginal** at both timepoints; endometrial thickness **ratio** (continuous), plus increasing vs non-increasing groups | Clinical pregnancy | Groups comparable on protocol, age, BMI, infertility diagnosis; [UNVERIFIED] whether embryo grade in model | **Opposite to Haas:** CPR rose with higher thickness ratio. Increasing vs non-increasing: 56.21% vs 47.13% (p<0.001, EP cycles); 55.15% vs 49.55% (p<0.001, natural cycles). **Expansion, not compaction, favoured** | CPR | Unclear | **CONT (ratio) + DICH** | No | No live birth; retrospective; unscreened embryos |
+| Jin Z, 2021 | Reprod Biol Endocrinol 19:154 · [10.1186/s12958-021-00841-x](https://doi.org/10.1186/s12958-021-00841-x) · PMID 34627292 | Retrospective cohort | 219 cycles | **Single frozen-thawed EUPLOID blastocyst** (PGT-SR / PGT-M), **natural cycle with luteal support** | **Transvaginal**, progesterone-start day and transfer day; **thickness change ratio modelled continuously** + compaction/non-change/expansion groups | Clinical pregnancy (LBR and miscarriage secondary) | Multiple logistic regression, covariates adjusted | **Opposite to Haas:** higher thickness change ratio → higher CPR, **aOR 1.29 (95% CI 1.01–1.64, p=0.040)** per unit. Non-compaction significantly favoured over compaction after adjustment. Miscarriage and LBR comparable across groups | CPR (LBR secondary) | [UNVERIFIED] whether blastocyst grade included | **CONT** | **Yes** | Small N; PGT-SR/PGT-M not PGT-A; natural cycle only; LBR underpowered |
+| Kaye L, 2021 | J Assist Reprod Genet 38:2947–2953 · [10.1007/s10815-021-02327-6](https://doi.org/10.1007/s10815-021-02327-6) · PMID 34585315 | Retrospective observational | 232 transfers | **Autologous single-blastocyst artificial-cycle FET**; ~48–58% PGT-A across groups (mixed) | **Transvaginal** at both timepoints; % change from progesterone-initiation thickness; compaction <−10%, unchanged −10 to <10%, expansion ≥10% | Ongoing pregnancy (FHM at 12 wk) | Stepwise logistic regression including age, **blastocyst diameter, inner cell mass area, trophectoderm cell count**, PGT-A use | OPR 63.2% (compaction, n=19) / 64.2% (unchanged, n=95) / **52.5% (expansion, n=118)**. % change in EMT retained in model (p=0.0155); age p=0.0199; PGT-A p=0.0023. Directionally pro-compaction but driven by the poor expansion group; only 19 compaction cases | OPR | **Yes — quantitative blastocyst morphometrics** | **CONT (% change in model)** | Subgroup (PGT-A as covariate) | Authors' own caveat: "retrospective design and the moderate size of the data set", exploratory stepwise regression with "uncontrolled Type I error rates requiring validation" |
+| Hou Z, 2025 | Int J Womens Health 17:1363–1374 · [10.2147/ijwh.s521115](https://doi.org/10.2147/ijwh.s521115) · PMID 40386085 | Retrospective | 261 cycles (156 analysed) | Women with **treated intrauterine adhesion**, HRT-FET | 10% **expansion** threshold identified as optimal | Ongoing pregnancy | Adjusted (aOR reported) | **Expansion ≥10% → higher OPR: 55.3% vs 26.3% (p=0.001), aOR 3.74.** Direction opposite to compaction hypothesis | OPR | [UNVERIFIED] | DICH | No | Special population (Asherman); small; retrospective |
+| Li Q, 2022 | Reprod Biol Endocrinol · [10.1186/s12958-022-01020-2](https://doi.org/10.1186/s12958-022-01020-2) · PMID 36271375 | [TITLE ONLY — NOT RETRIEVED] | — | Fresh IVF/ICSI, compaction after hCG | — | Ectopic pregnancy | — | Title reports compaction after hCG **reduces ectopic pregnancy rate** in fresh transfers | Ectopic | — | — | No | Not retrieved |
+| Milewski R, 2025 | J Clin Med 14:7923 · [10.3390/jcm14227923](https://doi.org/10.3390/jcm14227923) · PMID 41302959 | Prospective model development | **61 couples** | Polish fertility clinic, Dec 2021–Feb 2025; [UNVERIFIED] transfer type | Novel **endometrial shape** ("implantation predictor", IMP) using normalised endometrial dimensions post-ovulation and at ET — **not simple % thickness change** | **IMPLANTATION** | Logistic regression model | AUC 0.839 (95% CI 0.739–0.938); implantation 6.25% in lowest IMP quartile-range to 93.3% in highest | **IMP** | [UNVERIFIED] | CONT (continuous index) | [UNVERIFIED] | Extremely small (n=61); **no external validation**; almost certainly overfitted; AUC not credible at this N |
+
+---
+
+## SYSTEMATIC REVIEWS AND META-ANALYSES
+
+| Author, year | Journal | Studies / N | Compaction definitions pooled | Primary endpoint | Key pooled results | Euploid subgroup | Conclusion |
+|---|---|---|---|---|---|---|---|
+| **Turkgeldi E, 2023** | J Assist Reprod Genet 40:2513–2522 · [10.1007/s10815-023-02942-5](https://doi.org/10.1007/s10815-023-02942-5) · PMID 37726586 | 15 studies (10 studies / 11,710 cycles for LBR) | Heterogeneous | **Live birth** | LBR **RR 0.97 (95% CI 0.92–1.02)** — no difference. Miscarriage RR 1.06 (0.90–1.24), 12 studies | **Yes — euploid ET subgroup: RR 0.99 (95% CI 0.86–1.13), 4 studies, 1,172 cycles. Null.** | "The predictive value of EC in determining LBR is limited, and assessment of EC may no longer be necessary." |
+| **Chen XT, 2023** | Front Endocrinol 14:1264608 · [10.3389/fendo.2023.1264608](https://doi.org/10.3389/fendo.2023.1264608) · PMID 38034000 | 18 cohort studies (7 prospective, 11 retrospective); 16,164 transfers (3,022 fresh, 13,142 FET) | Heterogeneous; ECR strata incl. ≥15% | Clinical pregnancy, ongoing pregnancy, live birth | Clinical pregnancy RR 0.98 (0.90–1.08); ongoing RR 1.18 (0.95–1.47); **live birth RR 0.97 (0.92–1.02)**; miscarriage RR 1.05 (0.89–1.23) — **all null**. ECR ≥15% → ongoing RR 1.99 (1.61–2.47). **Critical subgroup: studies mixing transvaginal + abdominal ultrasound showed ongoing RR 1.69 (1.26–2.26) and LBR RR 1.27 (1.00–1.61) — i.e. the positive signal tracks the measurement artefact** | [UNVERIFIED] | "Endometrial compaction is not sufficient for predicting pregnancy outcomes"; recommends transvaginal ultrasonography to reduce measurement error |
+| **Feng S, 2024** | Hum Reprod 39:749–759 · [10.1093/humrep/deae012](https://doi.org/10.1093/humrep/deae012) · PMID 38323525 | 17 cohort studies; 18,973 ET cycles | Heterogeneous | **Live birth** | LBR **cOR 0.95 (0.87–1.04), I²=0%; aOR 1.02 (0.87–1.19), I²=79%**. Biochemical cOR 0.93 (0.81–1.06); clinical pregnancy, miscarriage, ectopic all null. Only ongoing pregnancy marginally elevated in crude analysis | [UNVERIFIED] | "Assessing endometrial compaction or repeated EMT measurement on the day of ET may not be necessary or warranted." |
+| **Al-Lamee H, 2024** | Hum Reprod Open 2024(3):hoae040 · [10.1093/hropen/hoae040](https://doi.org/10.1093/hropen/hoae040) · PMID 38993630 | 21 studies (7 prospective, 14 retrospective); 27,857 patients | Any decrease (4), ≥5% (7), ≥10% (4), ≥15% (1), undefined (5) | **Live birth** | **LBR OR 0.95 (0.87–1.04) — null.** Clinical pregnancy OR 1.83 (1.15–2.92); ongoing OR 1.61 (1.09–2.38); miscarriage OR 1.06 (0.89–1.25); positive test OR 1.54 (0.97–2.45). Compaction prevalence 32% (26–38%). HRT-FET subgroup: higher CPR/OPR. ≥15% vs none: OPR OR 3.52 (2.36–5.23) | **Yes — PGT-A euploid subgroup showed NO clinical or ongoing pregnancy advantage** | "EC is associated with a significantly higher CPR and OPR, but this does not translate to LBR"; "stratification of women according to EC cannot currently be recommended in clinical practice"; calls for a large well-designed clinical trial |
+| Lin G, 2024 (correspondence) | Hum Reprod Open 2024:hoae060 · [10.1093/hropen/hoae060](https://doi.org/10.1093/hropen/hoae060) · PMID 39465204 | [TITLE ONLY — NOT RETRIEVED] | — | — | Letter: "Emerging evidence of endometrial compaction in predicting ART outcomes" | — | Not retrieved |
+| Al-Lamee H, 2024 (reply) | Hum Reprod Open 2024:hoae061 · [10.1093/hropen/hoae061](https://doi.org/10.1093/hropen/hoae061) · PMID 39465203 | [TITLE ONLY — NOT RETRIEVED] | — | — | Authors' reply to Lin et al. | — | Not retrieved |
+
+**No randomised controlled trial of endometrial compaction has been published.** All four
+meta-analyses state explicitly that no RCT was available. Searches for an RCT
+(including 2026-dated queries) returned none.
+
+---
+
+## REGISTERED / ONGOING WORK
+
+| Record | Detail |
+|---|---|
+| De la Torre Perez E, 2023 — protocol paper, Front Endocrinol 14:1285040 · [10.3389/fendo.2023.1285040](https://doi.org/10.3389/fendo.2023.1285040) · PMID 38027116 | Multicentre **prospective** cohort protocol: 206 women (103 compaction / 103 non-compaction), **euploid embryo cryotransfer in modified natural cycle**, compaction defined as **≥5% decrease** estrogenic phase → transfer day, primary outcome **ongoing pregnancy rate**, ~30 months duration. Results not yet located as of 29 Aug 2026 — **the team should re-check for publication before submitting.** |
+| NCT04330066 — "Impact of Endometrial Compaction in Euploid Frozen Embryo Transfers" | [TITLE ONLY — NOT RETRIEVED] · https://clinicaltrials.gov/study/NCT04330066 — registration for a euploid-FET compaction study; status and results not verified. |
+| Al-Lamee 2024 conference precursor: "O-190 Endometrial compaction in artificial frozen-thawed embryo transfer cycles is associated with improvement in pregnancy outcomes: a meta-analysis", Hum Reprod 37(Suppl 1):deac106.100 | [TITLE ONLY — NOT RETRIEVED] · https://academic.oup.com/humrep/article/37/Supplement_1/deac106.100/6620549 — ESHRE abstract; superseded by the published meta-analyses above. |
+
+---
+
+## Summary of the four positioning questions across the whole literature
+
+| Question | Answer from the literature |
+|---|---|
+| **1. Implantation or live birth as endpoint?** | Live birth has been the primary endpoint of **four meta-analyses** (Turkgeldi 2023, Chen 2023, Feng 2024, Al-Lamee 2024) and of several large cohorts (Ye 2020 n=4,465; Huang 2020 n=2,768; Pan 2025 n=16,453; Riestenberg 2021; Shah 2022; Yaprak 2023). **Implantation as a distinct primary endpoint is rare** — only Milewski 2025 (n=61, a shape index, not % thickness change) uses it explicitly. Most positive studies used clinical or ongoing pregnancy, which is where the pooled signal lives and where it disappears by live birth. |
+| **2. Embryo quality adjusted?** | Rarely, but **not never**. Kaye 2021 adjusted for quantitative blastocyst morphometrics (diameter, ICM area, trophectoderm cell count) and PGT-A status; Pan 2025 stratified/weighted on embryo quality, number and stage; Ju 2023 adjusted for number of high-quality embryos; Yaprak 2023 adjusted for embryo stage; Gill 2023 adjusted for embryo score. The majority of the remaining studies did not, or did not report it. |
+| **3. Continuous or dichotomised?** | Overwhelmingly **dichotomised**, and at inconsistent cutoffs (any decrease, ≥5%, ≥10%, ≥15%, ≥20%) — Al-Lamee 2024 documents five different definitions across 21 studies. But continuous modelling **has been done**: Bu 2019 (thickness ratio), Jin Z 2021 (aOR 1.29 per unit change ratio), Kaye 2021 (% change as a continuous regressor), Pan 2025 (computes the exact ESI ratio before stratifying). |
+| **4. Euploid-only cohort analysed?** | **Yes, repeatedly.** Zilberberg 2020 (n=234, single euploid, positive), Riestenberg 2021 (n=259, single euploid, null), Shah 2022 (n=186, single euploid, prospective, null), Jin Z 2021 (n=219, single euploid blastocyst, opposite direction). Pooled in Turkgeldi 2023: **RR 0.99 (0.86–1.13), 4 studies, 1,172 cycles — null.** Al-Lamee 2024's PGT-A subgroup also showed no advantage. |
+
+---
+
+## Search strategy
+
+**Date of search: 29 August 2026.**
+
+Databases and sources queried:
+- **Europe PMC REST API** — `"endometrial compaction"` (all fields), sorted by publication date, full record retrieval (`resultType=core`), plus targeted `EXT_ID:` lookups to obtain verbatim abstracts for 20 individual PMIDs.
+- **PubMed / PubMed Central** — direct article retrieval for full-text extraction (PMC8609053, PMC10352224, PMC10682779, PMC12255888).
+- **Publisher sites** — Oxford Academic (Human Reproduction, Human Reproduction Open), Springer (J Assist Reprod Genet), Frontiers in Endocrinology, Reproductive Biology and Endocrinology, Fertility and Sterility, RBMO.
+- **General web search** (Google-Scholar-style natural language queries).
+
+Query strings used:
+1. `"endometrial compaction" frozen embryo transfer pregnancy outcome`
+2. `endometrial compaction meta-analysis systematic review frozen embryo transfer`
+3. `Haas 2019 endometrial compaction ongoing pregnancy rate Reproductive BioMedicine Online` (to verify the commonly-cited attribution — **see note below**)
+4. `"Endometrial compaction before frozen euploid embryo transfer improves ongoing pregnancy rates" Haas Fertility Sterility 2020`
+5. `endometrial compaction randomized controlled trial 2026 embryo transfer implantation rate continuous`
+6. Europe PMC: `"endometrial compaction"` — 48 records returned and screened; 25 relevant primary/secondary studies extracted.
+
+**Attribution correction (important):** the "Haas" paper is frequently mis-cited. The
+original 2019 report is **Haas J, Smith R, Zilberberg E, Nayot D, Meriano J, Barzilay E,
+Casper RF. *Fertility and Sterility* 2019;112:503–509** — **not** RBMO. The 2020 euploid
+follow-up is first-authored by **Zilberberg E** (Haas J is a co-author), *Fertility and
+Sterility* 2020;113:990–995. Cite both correctly.
+
+**Records excluded as off-topic** after screening: McClellan 2026 (in-vitro decidualization),
+Toma 2023 (rat 3D tissue), Kuroda 2023 (PRP transcriptomics), Chen L 2025 (PRP perfusion),
+Muter 2023 (review of implantation biology), Shu 2024 (editorial), Shuai 2024 (estradiol
+levels), Cheng 2025 (echo pattern), Zhang Y 2023 and Mumusoglu 2021 (endometrial preparation
+reviews), Shaodi 2020 (endometrial thickness, not change), Check 2013 (case report),
+Peng 2025 (intrauterine adhesion ultrasound), preprint duplicates of Milewski and Etezadi.

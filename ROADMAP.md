@@ -8,7 +8,7 @@ This file is the countdown and the gate list. Update it as things land.
 
 ## Two gates, both unopened as of 29 August 2026
 
-### Gate 1 — ethics. Now the critical path.
+### Gate 1 — ethics. The critical path, and now the only one with an external clock.
 
 > **Indira IVF IEC approval has not been sought.** Nothing can be extracted before
 > it is granted.
@@ -29,12 +29,16 @@ If no  → the study must become prospective → **it cannot make ASPIRE 2027**.
 Answer it with actual chart review, not recollection. See
 `studies/esi-fet/feasibility/pilot-questions.md`.
 
-### And a third thing that is not yet a gate but should be watched
+### Resolved 29 August 2026 — the data exists
 
-Data has **not been collected**. If it exists in Indira's systems awaiting
-extraction, the timeline below holds. If it requires manual chart abstraction per
-cycle, measure the per-record time in the pilot and multiply — that arithmetic has
-ended more projects than any statistical problem.
+Confirmed: the data resides in Indira's clinical systems and requires retrieval, not
+prospective collection. **The timeline below stands.** Ethics is now the sole
+critical path.
+
+Remaining sub-question, answered by measurement in the pilot rather than by
+estimate: time the first 30 record retrievals and multiply by the target N. That
+arithmetic decides whether 1,500–2,000 cycles is realistic or whether the study
+should be scoped smaller.
 
 ---
 
@@ -102,3 +106,5 @@ The third option is not a failure. It is the correct call if the data is not the
 | 29 Aug 2026 | Primary endpoint changed from live birth to implantation (SPEC.md Amendment 1). |
 | 29 Aug 2026 | Data source confirmed: Indira IVF, India. Data not yet collected. Ethics not yet sought — now the critical path. |
 | 29 Aug 2026 | Literature review of prior endometrial compaction studies commissioned. |
+| 29 Aug 2026 | Cohort restricted to first IVF cycle only. |
+| 29 Aug 2026 | **Data confirmed to exist** in Indira's systems — retrospective retrieval, not prospective collection. Timeline holds. |

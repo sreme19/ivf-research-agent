@@ -30,18 +30,20 @@ Recorded 29 August 2026 from the investigator.
 - Protocol heterogeneity across sites (FET protocol, progesterone route) must be
   recorded, not assumed uniform.
 
-## Data status
+## Data status — RESOLVED 29 August 2026
 
-**NOT YET COLLECTED.** As of 29 August 2026, collection has not begun.
+**The data exists.** It resides in Indira's clinical systems and requires retrieval,
+not prospective collection. The study is genuinely retrospective.
 
-This is a more significant constraint than "retrospective extraction pending". The
-`ROADMAP.md` timeline assumed data existing in an EMR awaiting extraction. Confirm
-which of these is true:
+This resolves the largest single threat to the timeline. `ROADMAP.md` stands as
+written.
 
-- [ ] Data exists in Indira's systems and needs extraction → timeline holds
-- [ ] Data requires manual chart abstraction per cycle → estimate hours/record in
-      the pilot and multiply; this is where projects die
-- [ ] Data requires prospective collection → **ASPIRE 2027 is not reachable**
+One sub-question remains, and the pilot answers it by measurement rather than by
+asking anyone: **how long does one record take to retrieve?** If a database query
+returns the cohort, extraction is trivial. If each cycle needs a chart opened and
+fields transcribed, 1,500 cycles at 6 minutes each is 150 hours. Time the first 30
+records in the pilot and multiply — that number, not anyone's estimate, decides
+whether the target N is realistic.
 
 ## Ethics / IRB
 

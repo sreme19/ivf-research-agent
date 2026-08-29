@@ -3,7 +3,7 @@
 **The board.** Read this first in every `paper-loop` iteration. Update it before
 finishing. Sessions end; this file persists.
 
-**Iteration: 2** · Last updated: 29 August 2026
+**Iteration: 3** · Last updated: 29 August 2026
 
 ---
 
@@ -31,6 +31,7 @@ finishing. Sessions end; this file persists.
 | Introduction | BLOCKED | Literature review (running) |
 | Methods — Study design | **DRAFTABLE NOW** | — |
 | Methods — Setting | **NEEDS-DATA** | Which Indira centres; study period |
+| Methods — Data sources | **DRAFTABLE NOW** | — |
 | Methods — Participants | **DRAFTABLE NOW** | — |
 | Methods — Variables | **DRAFTABLE NOW** | — |
 | Methods — Exposure (ESI) | **DRAFTABLE NOW** | — |
@@ -55,7 +56,8 @@ is the bulk of it, and it is the section reviewers scrutinise hardest.
 | Date | What | Unblocked |
 |---|---|---|
 | 29 Aug 2026 | ESI research handoff (design, variables, analysis plan) | Protocol, SAP, data dictionary |
-| 29 Aug 2026 | Data source = Indira IVF; data not yet collected; ethics not yet sought | Governance file, roadmap revision |
+| 29 Aug 2026 | Data source = Indira IVF; ethics not yet sought | Governance file, roadmap revision |
+| 29 Aug 2026 | **Data confirmed to exist** in clinic systems — retrospective retrieval | D2 resolved; timeline holds |
 | 29 Aug 2026 | Endpoint decision: implantation only | Endpoint rewrite across repo |
 | 29 Aug 2026 | Cohort decision: first IVF cycle only | SAP §5 resolved; adjustment set reduced; new limitation |
 
@@ -64,8 +66,7 @@ is the bulk of it, and it is the section reviewers scrutinise hardest.
 | # | Need | Unblocks | Priority |
 |---|---|---|---|
 | D1 | **Implantation definition** — gestational sac only, or sac + fetal pole? At what gestational age is the first scan? | Methods-Outcomes, SAP lock, entire analysis | **Critical** |
-| D2 | **Is the data an EMR extract or manual chart abstraction?** | Whether 6 Nov 2026 is reachable at all | **Critical** |
-| D3 | Ethics/IEC submission status and expected approval date | All data work | **Critical** |
+| D3 | **Ethics/IEC submission status and expected approval date** | All data work | **Critical — sole remaining blocker** |
 | D4 | Participating Indira centres + study period | Methods-Setting, `SITE_ID` design | High |
 | D5 | Pilot data, 30–50 consecutive cycles | Feasibility answers, missingness report | High |
 
