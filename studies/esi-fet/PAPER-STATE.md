@@ -1,0 +1,125 @@
+# PAPER STATE — ESI
+
+**The board.** Read this first in every `paper-loop` iteration. Update it before
+finishing. Sessions end; this file persists.
+
+**Iteration: 1** · Last updated: 29 August 2026
+
+---
+
+## The paper
+
+**Title (20 words, fits ASPIRE's 25-word limit):**
+
+> ENDOMETRIAL STABILITY INDEX: DOES DYNAMIC CHANGE IN ENDOMETRIAL THICKNESS DURING
+> PROGESTERONE EXPOSURE PREDICT IMPLANTATION FOLLOWING SINGLE BLASTOCYST FROZEN
+> EMBRYO TRANSFER
+
+**Primary endpoint:** implantation (SPEC.md Amendment 1)
+**Data source:** Indira IVF, India — multicentre
+**Targets:** ASPIRE 2027 abstract (deadline 6 November 2026) → Fertility & Reproduction
+
+---
+
+## Section board
+
+| Section | Status | Blocked on |
+|---|---|---|
+| Title | **DRAFT** | Implantation definition may alter wording |
+| Abstract — ASPIRE | BLOCKED | Results |
+| Abstract — journal | BLOCKED | Results |
+| Introduction | BLOCKED | Literature review (running) |
+| Methods — Study design | **DRAFTABLE NOW** | — |
+| Methods — Setting | **NEEDS-DATA** | Which Indira centres; study period |
+| Methods — Participants | **DRAFTABLE NOW** | — |
+| Methods — Variables | **DRAFTABLE NOW** | — |
+| Methods — Exposure (ESI) | **DRAFTABLE NOW** | — |
+| Methods — Ultrasound | **DRAFTABLE NOW** | Site protocol detail improves it |
+| Methods — Outcomes | **NEEDS-DECISION** | Implantation definition |
+| Methods — Statistical | **DRAFTABLE NOW** | SAP [TBD] items |
+| Methods — Ethics | **NEEDS-DATA** | IEC approval reference |
+| Results — all | BLOCKED | No data collected |
+| Discussion | BLOCKED | Results + literature |
+| Limitations | **DRAFTABLE NOW** | Several are already known |
+| References | BLOCKED | Literature review |
+
+**Roughly half the paper is writable before a single data point arrives.** Methods
+is the bulk of it, and it is the section reviewers scrutinise hardest.
+
+---
+
+## Data ledger
+
+### Received
+
+| Date | What | Unblocked |
+|---|---|---|
+| 29 Aug 2026 | ESI research handoff (design, variables, analysis plan) | Protocol, SAP, data dictionary |
+| 29 Aug 2026 | Data source = Indira IVF; data not yet collected; ethics not yet sought | Governance file, roadmap revision |
+| 29 Aug 2026 | Endpoint decision: implantation only | Endpoint rewrite across repo |
+
+### Outstanding — blocking
+
+| # | Need | Unblocks | Priority |
+|---|---|---|---|
+| D1 | **Implantation definition** — gestational sac only, or sac + fetal pole? At what gestational age is the first scan? | Methods-Outcomes, SAP lock, entire analysis | **Critical** |
+| D2 | **Is the data an EMR extract or manual chart abstraction?** | Whether 6 Nov 2026 is reachable at all | **Critical** |
+| D3 | Ethics/IEC submission status and expected approval date | All data work | **Critical** |
+| D4 | Participating Indira centres + study period | Methods-Setting, `SITE_ID` design | High |
+| D5 | Pilot data, 30–50 consecutive cycles | Feasibility answers, missingness report | High |
+
+### Outstanding — improves the paper, not blocking
+
+| # | Need | Unblocks |
+|---|---|---|
+| D6 | Ultrasound protocol documentation per centre | Methods-Ultrasound; strengthens the exposure's credibility |
+| D7 | Official ASPIRE 2027 abstract guidelines | Confirms the 300-word / 25-word limits |
+| D8 | F&R Instructions to Authors | Journal manuscript formatting |
+| D9 | Co-author list, affiliations, contributions | Title page |
+
+---
+
+## Analysis queue
+
+Nothing runnable — no data. Mapped to `SAP.md` sections.
+
+| # | Analysis | SAP § | Needs | Status |
+|---|---|---|---|---|
+| A1 | Data quality check — row counts, missingness, implausible values, β-hCG-negative coding | — | Any extract | Waiting |
+| A2 | Derive ΔET, ESI %, daily ESI **in code** | — | `ET1_MM`, `ET2_MM`, `P_DAYS` | Waiting |
+| A3 | Table 1 — baseline by implantation | §1 | Full extract | Waiting |
+| A4 | Figure 2 — ESI distribution | §1 | A2 | Waiting |
+| A5 | Primary model — ESI continuous vs implantation | §2 | Full extract, SAP locked | Waiting |
+| A6 | Figure 3 — restricted cubic spline | §3 | A5 | Waiting |
+| A7 | Model A/B/C/D comparison | §6 | A5 | Waiting |
+| A8 | Prespecified subgroups + interaction | §7,§8 | A5 | Waiting |
+| A9 | ICC / Cohen's kappa reproducibility | — | ~100 re-measured scans | Waiting |
+| A10 | Bootstrap internal validation | §10 | A7 | Waiting |
+
+---
+
+## Open decisions — investigator's to make
+
+| # | Decision | Consequence | Status |
+|---|---|---|---|
+| Q1 | Implantation: sac, or sac + fetal pole? | Defines the primary endpoint | **Open** |
+| Q2 | Repeated cycles: first-only or clustered? | SAP §5 | Open — pilot informs it |
+| Q3 | Is the prediction-model comparison in scope, or association only? | Determines whether TRIPOD applies | Open |
+| Q4 | ESI increment for the reported OR — per 5% or per 10%? | SAP §2 | Open |
+| Q5 | Prior international presentation of this work? | ASPIRE eligibility | Open |
+
+---
+
+## Background work running
+
+| Started | What | Delivers to |
+|---|---|---|
+| 29 Aug 2026 | Literature review of prior endometrial compaction studies | `literature/evidence-table.md`, `literature/REPORT.md` — unblocks Introduction and Discussion |
+
+---
+
+## Session log
+
+| Iteration | Date | Done | Asked for |
+|---|---|---|---|
+| 1 | 29 Aug 2026 | Repo created; ASPIRE rules captured; endpoint changed to implantation; Indira governance recorded; loop established; Methods drafted | D1, D2, D3 |
