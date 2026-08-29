@@ -1,0 +1,41 @@
+# ─────────────────────────────────────────────────────────────
+# PATIENT DATA — NEVER COMMITTED. See CLAUDE.md rule 1.
+# ─────────────────────────────────────────────────────────────
+studies/*/data/
+!studies/*/data/.gitkeep
+!studies/*/data/README.md
+
+# Any file that looks like an extract, anywhere
+*.xlsx
+*.xls
+*.csv
+*.tsv
+*.sav
+*.dta
+*.rds
+*.RData
+*.parquet
+*.db
+*.sqlite
+
+# Linkage / re-identification files — must live OUTSIDE this repo entirely
+*linkage*
+*identifiers*
+*mrn*
+*_phi*
+
+# ─────────────────────────────────────────────────────────────
+# Tooling
+# ─────────────────────────────────────────────────────────────
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+renv/library/
+renv/staging/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
