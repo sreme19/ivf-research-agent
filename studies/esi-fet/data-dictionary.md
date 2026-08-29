@@ -45,9 +45,13 @@ are generated in analysis; raw data cannot be reconstructed once discarded.
 | `PREV_MISCARRIAGE` | integer | Count |
 | `INFERTILITY_YEARS` | numeric | Years |
 | `INFERTILITY_TYPE` | categorical | 1 primary, 2 secondary |
-| `PREV_IVF` | integer | Count of previous IVF cycles |
-| `PREV_TRANSFER` | integer | Count of previous transfers |
-| `PREV_IMPLANTATION_FAILURE` | binary | 0/1 |
+| `PREV_IVF` | integer | Count of previous IVF cycles — **0 for all included cycles** (eligibility check only, not a covariate) |
+| `PREV_TRANSFER` | integer | Count of previous transfers — **0 for all included cycles** |
+| `PREV_IMPLANTATION_FAILURE` | binary | 0/1 — **0 for all included cycles** |
+
+*First-cycle-only cohort (SPEC.md Amendment 3). These three fields are collected to
+verify eligibility, then dropped before modelling — they are constant and cannot be
+estimated.*
 
 ## Infertility diagnosis — separate binaries, multiple may coexist
 

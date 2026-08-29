@@ -3,7 +3,7 @@
 **The board.** Read this first in every `paper-loop` iteration. Update it before
 finishing. Sessions end; this file persists.
 
-**Iteration: 1** · Last updated: 29 August 2026
+**Iteration: 2** · Last updated: 29 August 2026
 
 ---
 
@@ -57,6 +57,7 @@ is the bulk of it, and it is the section reviewers scrutinise hardest.
 | 29 Aug 2026 | ESI research handoff (design, variables, analysis plan) | Protocol, SAP, data dictionary |
 | 29 Aug 2026 | Data source = Indira IVF; data not yet collected; ethics not yet sought | Governance file, roadmap revision |
 | 29 Aug 2026 | Endpoint decision: implantation only | Endpoint rewrite across repo |
+| 29 Aug 2026 | Cohort decision: first IVF cycle only | SAP §5 resolved; adjustment set reduced; new limitation |
 
 ### Outstanding — blocking
 
@@ -102,8 +103,9 @@ Nothing runnable — no data. Mapped to `SAP.md` sections.
 
 | # | Decision | Consequence | Status |
 |---|---|---|---|
-| Q1 | Implantation: sac, or sac + fetal pole? | Defines the primary endpoint | **Open** |
-| Q2 | Repeated cycles: first-only or clustered? | SAP §5 | Open — pilot informs it |
+| Q1 | Implantation: sac, or sac + fetal pole? | Defines the primary endpoint | **Open — options presented, awaiting choice** |
+| Q2 | Repeated cycles: first-only or clustered? | SAP §5 | **RESOLVED 29 Aug 2026 — first IVF cycle only** |
+| Q6 | Does "first IVF cycle" exclude a woman whose fresh transfer in that same cycle failed before this FET? | Eligibility; potentially a large share of the cohort | **Open — new** |
 | Q3 | Is the prediction-model comparison in scope, or association only? | Determines whether TRIPOD applies | Open |
 | Q4 | ESI increment for the reported OR — per 5% or per 10%? | SAP §2 | Open |
 | Q5 | Prior international presentation of this work? | ASPIRE eligibility | Open |
@@ -123,3 +125,4 @@ Nothing runnable — no data. Mapped to `SAP.md` sections.
 | Iteration | Date | Done | Asked for |
 |---|---|---|---|
 | 1 | 29 Aug 2026 | Repo created; ASPIRE rules captured; endpoint changed to implantation; Indira governance recorded; loop established; Methods drafted | D1, D2, D3 |
+| 2 | 29 Aug 2026 | First-cycle-only applied across protocol, SAP, dictionary, manuscript; SAP §5 resolved; implantation definition options presented | Q1 choice, Q6, D2, D3 |

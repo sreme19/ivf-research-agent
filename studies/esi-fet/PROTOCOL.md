@@ -50,7 +50,12 @@ studying endometrial effects.
 
 ### Inclusion
 
+**Revised 29 August 2026: first IVF cycle only.** Women with previous IVF cycles,
+previous embryo transfers, or previous implantation failure are excluded. See
+`SPEC.md` Amendment 3.
+
 - Age approximately 21–45 years
+- **First IVF cycle** — no previous IVF, no previous embryo transfer
 - Frozen blastocyst transfer
 - Autologous oocyte cycle
 - Single blastocyst transfer (primary analysis)
@@ -67,7 +72,7 @@ Donor-oocyte cycles; gestational carriers; major Müllerian anomalies; untreated
 hydrosalpinx; untreated significant submucosal fibroid; significant untreated
 endometrial polyp; severe intrauterine adhesions; cycles without standardised ET
 measurements; missing embryo information; missing transfer outcome; double embryo
-transfers (primary analysis).
+transfers (primary analysis); **any previous IVF cycle or embryo transfer**.
 
 Adenomyosis, endometriosis and fibroids are **recorded, not excluded** — they can
 be adjusted for or studied as subgroups.

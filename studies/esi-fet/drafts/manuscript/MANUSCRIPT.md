@@ -84,7 +84,9 @@ reproduction clinics in India. Cycles performed between `[START DATE]` and
 <!-- STATUS: DRAFT -->
 
 Women aged 21 to 45 years undergoing frozen transfer of a single blastocyst derived
-from autologous oocytes were eligible.
+from autologous oocytes, **in their first IVF cycle**, were eligible. Women with any
+previous IVF cycle, previous embryo transfer or previous implantation failure were
+excluded.
 
 Cycles were included where endometrial thickness had been measured at two
 standardised time points — immediately before progesterone initiation and on the day
@@ -95,8 +97,9 @@ Cycles were excluded where any of the following applied: donor oocytes; gestatio
 carriage; major Müllerian anomaly; untreated hydrosalpinx; untreated significant
 submucosal fibroid; significant untreated endometrial polyp; severe intrauterine
 adhesions; absence of standardised endometrial measurement at either time point;
-missing embryo information; or missing transfer outcome. Transfers of more than one
-embryo were excluded from the primary analysis.
+missing embryo information; missing transfer outcome; or any previous IVF cycle or
+embryo transfer. Transfers of more than one embryo were excluded from the primary
+analysis.
 
 Adenomyosis, endometriosis and uterine fibroids not meeting the above exclusion
 criteria were recorded rather than excluded, and were available for adjustment and
@@ -192,7 +195,7 @@ assessed. This limitation is addressed in the Discussion.
 
 Covariates were selected on clinical and causal grounds rather than by univariate
 statistical screening, and comprised: maternal age at transfer; body mass index;
-infertility diagnosis; number of previous failed transfers; baseline endometrial
+infertility diagnosis; baseline endometrial
 thickness (ET1); endometrial pattern; endometrial preparation protocol; duration of
 progesterone exposure; progesterone route and dose; serum progesterone before
 transfer where available; duration of oestrogen exposure; blastocyst developmental
@@ -226,8 +229,9 @@ and implantation was examined using restricted cubic splines with `[K]` knots pl
 at `[PERCENTILES]`, from which adjusted predicted probabilities of implantation were
 derived across the observed range of ESI.
 
-Where a woman contributed more than one eligible transfer cycle, `[APPROACH — SAP §5,
-PAPER-STATE Q2]`.
+Because the cohort was restricted to first IVF cycles, each woman contributed a
+single transfer and observations were independent at the patient level. Clustering by
+participating centre was accounted for by `[APPROACH]`.
 
 To assess whether ESI contributed information beyond established predictors, four
 nested models were compared: baseline endometrial thickness alone; with patient
@@ -317,6 +321,12 @@ receptivity, and should not be interpreted as one.
 characteristics, unmeasured factors — endometrial molecular status, undiagnosed
 chronic endometritis, immunological factors — may influence both endometrial
 behaviour and implantation.
+
+**Restriction to first IVF cycles.** By design, the cohort excludes women with
+previous implantation failure. This improves internal validity by removing
+heterogeneity attributable to prior treatment, but it excludes the population in
+which endometrial factors are most often clinically invoked. Findings should not be
+extrapolated to women with recurrent implantation failure.
 
 **Generalisability.** The cohort derives from a single clinical network in India.
 Practice patterns, patient characteristics and embryo culture conditions may differ

@@ -63,7 +63,7 @@ Collinearity checked.
 
 | Domain | Covariates |
 |---|---|
-| Patient | Age, BMI, infertility diagnosis, previous failed transfers |
+| Patient | Age, BMI, infertility diagnosis |
 | Endometrium | Baseline ET1, endometrial pattern, FET protocol |
 | Hormonal | Progesterone exposure duration, route/dose, serum P4 where available, estrogen exposure duration |
 | Embryo | Developmental day (D5/D6/D7), expansion, ICM, TE, PGT-A/ploidy |
@@ -78,18 +78,29 @@ adjustment set can be more generous before overfitting becomes a concern. The
 statistician should recalculate events-per-variable on the implantation rate, not
 a live-birth rate.
 
-## 5. Repeated cycles
+## 5. Repeated cycles — RESOLVED 29 August 2026
 
-Women may contribute more than one FET cycle; observations are not independent.
+**Not applicable by design.** The cohort is restricted to women in their **first IVF
+cycle**. Each woman therefore contributes exactly one transfer, and observations are
+independent at the patient level. No clustering, mixed-effects or GEE approach is
+required for repeated cycles.
 
-**Prespecified approach: [TBD — DECIDE BEFORE LOCK]**
-- Option A: first eligible transfer per woman only (simpler, loses data)
-- Option B: all cycles with clustered SEs / mixed effects / GEE (retains data,
-  more assumptions)
+**Clustering by centre still applies.** This is a multicentre study; `SITE_ID` is
+included as a covariate or random effect (§4). Do not confuse the two — resolving
+patient-level clustering does not resolve site-level clustering.
 
-Recommendation: Option A for the primary analysis, Option B as a sensitivity
-analysis. The pilot will show how many women have multiple cycles, which should
-inform the choice — decide once that number is known, then lock.
+**Consequences for §4.** `PREV_IVF`, `PREV_TRANSFER` and `PREV_IMPLANTATION_FAILURE`
+are constant by construction and are removed from the adjustment set. "Previous
+failed transfers" is likewise removed. Retaining a constant in a regression model
+is not merely redundant, it will fail to estimate.
+
+**Consequence for §7.** The exploratory "previous implantation failure" subgroup is
+removed — there is no such subgroup in this cohort.
+
+**Consequence for generalisability.** Findings apply to first-cycle patients only.
+They cannot be extrapolated to women with recurrent implantation failure, which is
+arguably the population in which endometrial factors matter most. This must appear
+in the Limitations, not be left implicit.
 
 ## 6. Incremental prediction
 
@@ -124,8 +135,8 @@ Deliberately limited, to avoid data dredging. **These four only:**
 3. Embryo day — D5 vs D6
 4. Baseline ET1 stratum *(continuous modelling preserved in parallel)*
 
-Exploratory, labelled as such: age; adenomyosis; previous implantation failure;
-serum P4.
+Exploratory, labelled as such: age; adenomyosis; serum P4.
+*(Previous implantation failure removed — excluded by design, see §5.)*
 
 ## 8. Interaction
 
@@ -167,7 +178,6 @@ acceptable if declared]**.
 - [ ] Formal sample-size / power calculation from a statistician
 - [ ] ESI increment for the reported odds ratio
 - [ ] Spline knot number and placement
-- [ ] Repeated-cycle approach (§5)
 - [ ] **Implantation definition — gestational sac only, or sac plus fetal pole?**
       *(Primary endpoint. Nothing locks until this does.)*
 - [ ] Confirmation that β-hCG-negative, never-scanned cycles are coded `0`, not `NA`

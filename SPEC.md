@@ -132,6 +132,29 @@ remains a collected field only.
 
 **Decided by:** investigator. **Recorded by:** Claude, 29 August 2026.
 
+### Amendment 3 — 29 August 2026 — first IVF cycle only
+
+Cohort restricted to women in their **first IVF cycle**. No previous IVF, no
+previous embryo transfer, no previous implantation failure.
+
+**Consequences:**
+
+- Resolves SAP §5. Each woman contributes one transfer; patient-level clustering
+  no longer arises. **Site-level clustering still does** — this is multicentre.
+- `PREV_IVF`, `PREV_TRANSFER`, `PREV_IMPLANTATION_FAILURE` are constant and removed
+  from the adjustment set.
+- The "previous implantation failure" exploratory subgroup is removed.
+- The cohort becomes markedly more homogeneous, which strengthens internal validity
+  and reduces confounding by prior treatment history.
+
+**Cost, recorded honestly:** the excluded group — women with recurrent implantation
+failure — is arguably where endometrial factors matter most clinically, and where a
+finding about endometrial behaviour would be most useful. This study cannot speak to
+them. It must say so in Limitations rather than leave it implicit.
+
+**Open:** whether a woman whose first IVF cycle included a failed *fresh* transfer,
+followed by FET of a surplus blastocyst, is in or out. See PAPER-STATE Q6.
+
 ### Amendment 2 — 29 August 2026 — Young Investigator Award not pursued
 
 Award eligibility checks removed from the `aspire-compliance` skill at the
