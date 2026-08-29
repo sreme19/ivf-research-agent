@@ -132,6 +132,36 @@ remains a collected field only.
 
 **Decided by:** investigator. **Recorded by:** Claude, 29 August 2026.
 
+### Amendment 4 — 29 August 2026 — primary endpoint is β-hCG positivity
+
+Refines Amendment 1. The primary endpoint is **biochemical implantation — positive
+serum β-hCG**, not gestational sac. Gestational sac becomes a prespecified key
+secondary.
+
+**Rationale for:** β-hCG positivity is the earliest evidence that implantation
+biologically occurred, and therefore the most proximate available marker of the event
+ESI is hypothesised to influence. Highest event rate. Decisively for a retrospective
+study, near-complete ascertainment — every patient has a β-hCG result, whereas only
+β-hCG-positive patients proceed to ultrasound.
+
+**Rationale against, recorded honestly:** ICMART/WHO defines implantation rate by
+gestational sacs, so this is not the standard definition and must be named precisely
+rather than presented as "implantation rate". It is assay- and threshold-dependent,
+which is a live risk across multiple Indira centres. It includes transient
+biochemical events that never progressed.
+
+**Mitigations applied:**
+
+- Raw β-hCG value, site threshold, assay platform and days-post-transfer are all
+  collected. The binary is derived in code from a single harmonised threshold.
+- Gestational sac retained as a prespecified key secondary, giving comparability with
+  the sac-based prior literature and serving as a sensitivity analysis.
+- Methods must state the definition explicitly and acknowledge the divergence from
+  ICMART. `protocol-guard` enforces this.
+
+**Also confirmed:** Indira's first scan is at **6 weeks' gestation**, anchoring the
+gestational-sac secondary endpoint.
+
 ### Amendment 3 — 29 August 2026 — first IVF cycle only
 
 Cohort restricted to women in their **first IVF cycle**. No previous IVF, no

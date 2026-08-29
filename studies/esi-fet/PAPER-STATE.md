@@ -3,7 +3,13 @@
 **The board.** Read this first in every `paper-loop` iteration. Update it before
 finishing. Sessions end; this file persists.
 
-**Iteration: 3** · Last updated: 29 August 2026
+**Iteration: 4** · Last updated: 29 August 2026
+
+> ⚠️ **READ `literature/REPORT.md` BEFORE WRITING ANY FRAMING.** The phenomenon is
+> published as "endometrial compaction": ~25 studies, 4 meta-analyses, up to 27,857
+> patients. Pan 2025 (n=16,453) used the identical ESI formula. The novelty claim as
+> originally framed is NOT defensible. Positioning decision Q7 is now the most
+> important open item in this project.
 
 ---
 
@@ -28,7 +34,7 @@ finishing. Sessions end; this file persists.
 | Title | **DRAFT** | Implantation definition may alter wording |
 | Abstract — ASPIRE | BLOCKED | Results |
 | Abstract — journal | BLOCKED | Results |
-| Introduction | BLOCKED | Literature review (running) |
+| Introduction | **DRAFTABLE NOW** | Positioning decision Q7 first |
 | Methods — Study design | **DRAFTABLE NOW** | — |
 | Methods — Setting | **NEEDS-DATA** | Which Indira centres; study period |
 | Methods — Data sources | **DRAFTABLE NOW** | — |
@@ -42,7 +48,7 @@ finishing. Sessions end; this file persists.
 | Results — all | BLOCKED | No data collected |
 | Discussion | BLOCKED | Results + literature |
 | Limitations | **DRAFTABLE NOW** | Several are already known |
-| References | BLOCKED | Literature review |
+| References | **DRAFTABLE NOW** | Evidence table populated |
 
 **Roughly half the paper is writable before a single data point arrives.** Methods
 is the bulk of it, and it is the section reviewers scrutinise hardest.
@@ -66,7 +72,9 @@ is the bulk of it, and it is the section reviewers scrutinise hardest.
 | # | Need | Unblocks | Priority |
 |---|---|---|---|
 | D1 | **Implantation definition** — gestational sac only, or sac + fetal pole? At what gestational age is the first scan? | Methods-Outcomes, SAP lock, entire analysis | **Critical** |
-| D3 | **Ethics/IEC submission status and expected approval date** | All data work | **Critical — sole remaining blocker** |
+| D3 | **Ethics/IEC submission status and expected approval date** | All data work | **Critical** |
+| D10 | **Decision on Q7 positioning** | Introduction, Discussion, abstract — everything | **Critical** |
+| D11 | Is ultrasound transvaginal at BOTH timepoints across all sites? | Whether the study is credible at all — see REPORT §"Where the evidence conflicts" | **Critical** |
 | D4 | Participating Indira centres + study period | Methods-Setting, `SITE_ID` design | High |
 | D5 | Pilot data, 30–50 consecutive cycles | Feasibility answers, missingness report | High |
 
@@ -110,14 +118,25 @@ Nothing runnable — no data. Mapped to `SAP.md` sections.
 | Q3 | Is the prediction-model comparison in scope, or association only? | Determines whether TRIPOD applies | Open |
 | Q4 | ESI increment for the reported OR — per 5% or per 10%? | SAP §2 | Open |
 | Q5 | Prior international presentation of this work? | ASPIRE eligibility | Open |
+| **Q7** | **How is the study positioned given 4 meta-analyses already sit on the null?** Replication/refutation vs. novel index | The entire Introduction, Discussion and abstract framing | **Open — most important decision in the project** |
+| Q8 | Keep the name "Endometrial Stability Index"? It is compaction expressed as % change, already published under that formula | Title, reviewer credibility | Open |
+| Q9 | Restrict to euploid-only? Would occupy the strongest remaining gap but cuts N | Cohort definition, power | Open |
 
 ---
 
 ## Background work running
 
-| Started | What | Delivers to |
+| Started | What | Status |
 |---|---|---|
-| 29 Aug 2026 | Literature review of prior endometrial compaction studies | `literature/evidence-table.md`, `literature/REPORT.md` — unblocks Introduction and Discussion |
+| 29 Aug 2026 | Literature review of prior endometrial compaction studies | **COMPLETE.** See `literature/REPORT.md`. |
+
+### Outstanding literature action — before submission
+
+- [ ] **Re-check De la Torre Perez 2023** (Front Endocrinol, PMID 38027116) — registered
+      prospective euploid modified-natural-cycle compaction protocol, n=206, ~30 months.
+      May have reported by now. If it has, it directly occupies part of the intended space.
+- [ ] **Re-check ClinicalTrials.gov NCT04330066** — "Impact of Endometrial Compaction in
+      Euploid Frozen Embryo Transfers". Status unverified.
 
 ---
 
@@ -127,3 +146,5 @@ Nothing runnable — no data. Mapped to `SAP.md` sections.
 |---|---|---|---|
 | 1 | 29 Aug 2026 | Repo created; ASPIRE rules captured; endpoint changed to implantation; Indira governance recorded; loop established; Methods drafted | D1, D2, D3 |
 | 2 | 29 Aug 2026 | First-cycle-only applied across protocol, SAP, dictionary, manuscript; SAP §5 resolved; implantation definition options presented | Q1 choice, Q6, D2, D3 |
+| 3 | 29 Aug 2026 | Primary endpoint set to β-hCG positivity (Amendment 4); raw-value + harmonised-threshold mitigations added; 6-week scan anchor recorded; data confirmed to exist | Q6, D3 |
+| 4 | 29 Aug 2026 | **Literature review complete — novelty claim not defensible as framed.** Positioning decision Q7 raised | **Q7, Q8, Q9, D11** |

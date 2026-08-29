@@ -24,21 +24,37 @@ and is labelled post-hoc in the manuscript text, not merely in a footnote.
 ## 1. Descriptive analysis
 
 Mean ± SD for approximately normal continuous variables; median (IQR) for skewed;
-n (%) for categorical. Compared by **implantation vs. no implantation**.
+n (%) for categorical. Compared by **biochemical implantation (β-hCG positive) vs.
+not**.
 
 **Unadjusted comparisons are descriptive only** and do not support any conclusion
 about ESI.
 
 ## 2. Primary analysis
 
-ESI (%) as a **continuous** exposure against **implantation** (primary endpoint,
-see `PROTOCOL.md`), by multivariable logistic regression.
+ESI (%) as a **continuous** exposure against **biochemical implantation** (primary
+endpoint), by multivariable logistic regression.
 
-Implantation is defined as the presence of at least one intrauterine gestational
-sac on transvaginal ultrasound at the centre's standard first scan. **[Definition
-pending clinician confirmation — must be fixed before lock.]** Cycles that were
-β-hCG negative and therefore never scanned are coded as implantation failures
-(`0`), not as missing.
+Biochemical implantation is defined as a positive serum β-hCG at the centre's
+standard post-transfer interval. Positivity is determined by applying a **single
+harmonised threshold to the recorded raw β-hCG value**, not by accepting each site's
+local flag. The harmonised threshold is prespecified here: **[TBD — confirm the
+thresholds in use across Indira centres, then fix a common value]**.
+
+If raw values prove unavailable at some sites, the site-flag fallback must be
+declared and site included as a covariate to absorb the resulting classification
+differences.
+
+### Key secondary analysis — gestational sac
+
+The identical model is refitted with **gestational sac** as the outcome. This is the
+endpoint used by almost all prior compaction literature and is the basis for
+comparison with it. It is prespecified, not post-hoc.
+
+Report both. Concordance strengthens the primary finding; divergence between an
+hCG-positive effect and a sac-level null would suggest ESI relates to initial
+implantation rather than to its progression — a substantive result in its own right,
+and one worth stating explicitly rather than burying.
 
 Reported as an adjusted odds ratio per clinically meaningful ESI increment
 (increment to be prespecified — **[TBD: propose per 5% or per 10%]**) with 95% CI.
@@ -48,7 +64,7 @@ Reported as an adjusted odds ratio per clinically meaningful ESI increment
 ## 3. Shape of the relationship
 
 **Restricted cubic splines.** X: ESI %. Y: adjusted predicted probability of
-implantation.
+biochemical implantation. Repeated for the gestational-sac secondary endpoint.
 
 Knot number and placement prespecified here: **[TBD — conventionally 3–5 knots at
 standard percentiles]**.
@@ -71,9 +87,9 @@ Collinearity checked.
 Baseline ET1 must be in the model. Without it, ESI is confounded by starting
 thickness by construction.
 
-**Note on the endpoint change.** With implantation rather than live birth as the
-outcome, the event rate rises substantially — implantation occurs in a larger
-fraction of transfers than live birth does. More events per covariate means the
+**Note on the endpoint change.** With β-hCG positivity rather than live birth as the
+outcome, the event rate rises substantially — biochemical implantation occurs in a
+considerably larger fraction of transfers than live birth does. More events per covariate means the
 adjustment set can be more generous before overfitting becomes a concern. The
 statistician should recalculate events-per-variable on the implantation rate, not
 a live-birth rate.
@@ -178,9 +194,10 @@ acceptable if declared]**.
 - [ ] Formal sample-size / power calculation from a statistician
 - [ ] ESI increment for the reported odds ratio
 - [ ] Spline knot number and placement
-- [ ] **Implantation definition — gestational sac only, or sac plus fetal pole?**
+- [ ] **Harmonised β-hCG positivity threshold across all participating centres**
       *(Primary endpoint. Nothing locks until this does.)*
-- [ ] Confirmation that β-hCG-negative, never-scanned cycles are coded `0`, not `NA`
+- [ ] Whether raw β-hCG values are retrievable, or only site flags
+- [ ] Standard days-post-transfer interval for β-hCG measurement, and its variability
 - [ ] Ongoing-pregnancy gestational-age threshold
 - [ ] Clinical-pregnancy definition
 - [ ] Multiplicity position (§12)

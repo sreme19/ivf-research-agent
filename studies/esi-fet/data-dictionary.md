@@ -165,32 +165,46 @@ See handoff §33: never hand-calculate these.
 
 ## Outcomes
 
-### Primary
+### Primary — biochemical implantation
 
 | Variable | Type | Coding / units |
 |---|---|---|
-| **`IMPLANTATION`** | binary | **0/1 — PRIMARY ENDPOINT** |
-| `FIRST_SCAN_DATE` | date | Date of the scan on which implantation was assessed |
-| `GEST_AGE_AT_SCAN` | numeric | Weeks |
+| **`BETA_HCG_POSITIVE`** | binary | **0/1 — PRIMARY ENDPOINT.** Derived in code by applying the harmonised threshold to `BETA_HCG_VALUE` |
+| `BETA_HCG_VALUE` | numeric | **mIU/mL — raw value. Collect this, not just the flag.** |
+| `BETA_HCG_UNITS` | text | Confirm units per site |
+| `BETA_HCG_THRESHOLD_SITE` | numeric | The positivity threshold that site uses |
+| `BETA_HCG_ASSAY` | text | Assay platform |
+| `BETA_HCG_DAYS_POST_TRANSFER` | numeric | Days from transfer to sample |
+| `BETA_HCG_DATE` | date | |
 
-`IMPLANTATION` = at least one intrauterine gestational sac on transvaginal
-ultrasound at the standard first scan. **Definition pending clinician
-confirmation — see `PROTOCOL.md`.**
+**Why the raw value matters.** This is a multicentre study. If sites use different
+positivity thresholds, a binary flag means the outcome is defined differently at
+different sites — measurement error in the outcome, which is worse than measurement
+error in a covariate. Collect the number; derive the flag in code with one
+harmonised threshold.
 
-Because the primary analysis is single embryo transfer only, per-transfer and
-per-embryo implantation are identical.
+### Key secondary — gestational sac (6-week scan)
+
+| Variable | Type | Coding / units |
+|---|---|---|
+| `GESTATIONAL_SAC` | binary | 0/1 — ≥1 intrauterine sac |
+| `SAC_NUMBER` | integer | Count |
+| `FETAL_CARDIAC_ACTIVITY` | binary | 0/1 — often visible at 6 weeks; capture separately |
+| `FIRST_SCAN_DATE` | date | |
+| `GEST_AGE_AT_SCAN` | numeric | Weeks — expected ~6 |
 
 **Coding rule that matters:** a cycle that was β-hCG negative and therefore never
-scanned is `IMPLANTATION = 0`, **not** `NA`. It is a confirmed implantation
-failure, not a missing observation. Getting this wrong biases the primary endpoint.
+scanned is `GESTATIONAL_SAC = 0`, **not** `NA`. It is a confirmed failure, not a
+missing observation. Coding it `NA` drops it from the analysis and inflates the rate.
 
-### Secondary
+Because all transfers are single blastocyst transfers, `GESTATIONAL_SAC` is
+equivalent to both the ICMART implantation rate and the clinical pregnancy rate.
+
+### Other secondary
 
 | Variable | Type | Coding / units |
 |---|---|---|
-| `BETA_HCG` | binary | 0/1 |
-| `BIOCHEMICAL_PREGNANCY` | binary | 0/1 |
-| `CLINICAL_PREGNANCY` | binary | 0/1 — predefined definition |
+| `BIOCHEMICAL_PREGNANCY` | binary | 0/1 — β-hCG positive, no subsequent sac |
 | `ONGOING_PREGNANCY` | binary | 0/1 — predefined GA threshold |
 | `MISCARRIAGE` | binary | 0/1 |
 
@@ -242,3 +256,7 @@ Yields **ICC** for thickness and **Cohen's kappa** for pattern.
    propagates directly into ESI — see `SITE-AND-GOVERNANCE.md`.)*
 9. Add `SITE_ID` — required as a covariate or random effect for a multicentre
    analysis.
+10. **What β-hCG positivity threshold does each participating centre use, and is
+    the raw value retrievable?** *(Primary endpoint depends on this.)*
+11. Is the days-post-transfer interval for β-hCG consistent across sites?
+12. Does the 6-week scan record routinely document cardiac activity as well as sac?

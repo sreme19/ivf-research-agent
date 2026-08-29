@@ -127,28 +127,66 @@ subendometrial blood flow; peristalsis in waves/minute. Useful, but not gating.
 handoff (§28). It has been replaced by implantation at the investigator's
 direction. Rationale and trade-off recorded in `SPEC.md`, Amendment 1.
 
-### Primary: implantation, per single blastocyst transferred (0/1)
+### Primary: biochemical implantation — positive serum β-hCG (0/1)
 
-**Definition — REQUIRES CLINICIAN CONFIRMATION.** "Implantation" is used
-inconsistently in this literature and an ambiguous definition is a reviewer
-objection waiting to happen. The definition must be fixed before the SAP is locked.
+**DECIDED 29 August 2026.** See `SPEC.md` Amendment 4.
 
-Proposed: presence of at least one **intrauterine gestational sac** on transvaginal
-ultrasound, assessed at the centre's standard first scan (~5–6 weeks' gestation).
+Positive serum β-hCG measured at the centre's standard post-transfer interval,
+indicating trophoblastic secretion and therefore biochemical evidence that
+implantation occurred.
 
-Because every cycle in the primary analysis is a **single** embryo transfer, the
-implantation rate per transfer and per embryo are identical, and the endpoint is a
-clean binary. This is one of the genuine advantages of restricting to SET.
+**This must be named precisely in the manuscript.** ICMART/WHO defines *implantation
+rate* as gestational sacs divided by embryos transferred. This study uses a
+different, earlier definition. The Methods must say so explicitly — "biochemical
+implantation, defined as positive serum β-hCG" — and must not present it as the
+ICMART implantation rate. Naming it plainly converts a reviewer objection into a
+stated design choice.
 
-Alternatives to rule out explicitly:
-- Gestational sac **with** fetal pole
-- Gestational sac **with** fetal cardiac activity *(this is clinical pregnancy, not
-  implantation — do not conflate)*
+**Rationale.** β-hCG positivity is the earliest detectable evidence that an embryo
+implanted and trophoblast began secreting. It is biologically the most proximate
+marker of the event ESI is hypothesised to influence; later endpoints add causes of
+failure that have nothing to do with the endometrium at transfer. It also carries
+the highest event rate, and — decisively for a retrospective study — near-complete
+ascertainment: every patient has a β-hCG result, whereas only β-hCG-positive patients
+proceed to ultrasound.
 
-### Secondary
+**Mitigation 1 — record the value, not just the flag.** The raw β-hCG concentration,
+the assay's positivity threshold, the assay platform, and the number of days
+post-transfer at which the sample was taken are recorded for every cycle. A binary
+alone is not sufficient in a multicentre study.
 
-Positive β-hCG; biochemical pregnancy; clinical pregnancy (predefined); ongoing
+**Mitigation 2 — gestational sac is a prespecified key secondary.** This provides
+comparability with the prior compaction literature, which is almost entirely
+sac-based, and serves as a sensitivity analysis. Concordant results across both
+endpoints strengthen the finding; divergence is itself informative.
+
+### Key secondary — gestational sac
+
+Presence of at least one intrauterine gestational sac on transvaginal ultrasound at
+the centre's standard first scan, performed at **6 weeks' gestation** (confirmed
+29 August 2026). Because all transfers are single blastocyst transfers, this is
+equivalent to both the ICMART implantation rate and the clinical pregnancy rate — a
+point the manuscript should state rather than leave for a reviewer to notice.
+
+**Note on 6 weeks.** At this gestational age fetal cardiac activity is frequently
+already visible. This is an advantage — the same scan can yield both a sac-level and
+a cardiac-activity-level endpoint at no extra cost — but it means the scan record
+must be checked for what was actually documented. If the record routinely notes
+cardiac activity, capture it as a separate field rather than collapsing everything
+into "sac present".
+
+### Other secondary
+
+Biochemical pregnancy (β-hCG positive without subsequent gestational sac); ongoing
 pregnancy (gestational-age threshold predefined); miscarriage.
+
+### Multicentre threat to this endpoint
+
+If participating Indira centres use different assay platforms or different positivity
+thresholds, a cycle classified positive at one site could be classified negative at
+another. This is measurement error **in the outcome**, which is more damaging than
+measurement error in a covariate. Confirm the thresholds in use across sites; if they
+differ, apply a single harmonised threshold to the recorded raw values.
 
 ### Collected but NOT analysed in this study
 
@@ -210,10 +248,11 @@ comparison is presented. See `../../reference/`.
 6. Is PGT-A common enough to power a euploid subgroup?
 7. Is serum P4 measured routinely before transfer?
 8. Which FET protocols are in use, and in what proportions?
-9. **What is the centre's exact definition of implantation, and at what
-   gestational age is the first scan performed?** This must be fixed before the
-   SAP is locked.
-10. Is the first-scan result documented consistently enough to serve as a primary
-    endpoint, including for cycles that were β-hCG negative and therefore never
-    scanned? *(Those are implantation failures, not missing data — confirm they
-    can be identified.)*
+9. **What β-hCG positivity threshold is used, and is it the same at every
+   participating centre?** Is the raw value retrievable, or only a positive/negative
+   flag? *(Primary endpoint depends on this.)*
+10. How many days after transfer is β-hCG measured, and is that interval consistent?
+11. ~~At what gestational age is the first scan performed?~~ **Answered: 6 weeks.**
+12. Does the 6-week scan record routinely document fetal cardiac activity as well as
+    the sac? *(If yes, a third endpoint level is available at no extra collection
+    cost.)*
