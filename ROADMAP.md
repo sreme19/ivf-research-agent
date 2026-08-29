@@ -6,18 +6,35 @@ This file is the countdown and the gate list. Update it as things land.
 
 ---
 
-## The gate that decides everything
+## Two gates, both unopened as of 29 August 2026
+
+### Gate 1 — ethics. Now the critical path.
+
+> **Indira IVF IEC approval has not been sought.** Nothing can be extracted before
+> it is granted.
+
+This has overtaken ET2 as the binding constraint, because it is the one with an
+external clock that cannot be compressed by working harder. IEC meeting schedules,
+not review effort, usually set the delay. **Start today.** See
+`studies/esi-fet/SITE-AND-GOVERNANCE.md`.
+
+### Gate 2 — is ET2 there?
 
 > **Is transfer-day endometrial thickness (ET2) routinely and consistently
-> recorded in the clinic's records?**
+> recorded across the participating Indira centres?**
 
-If yes → retrospective study is viable → ASPIRE 2027 is reachable.
-If no  → the study must become prospective → **it cannot make ASPIRE 2027**, and
-the fallback options below apply.
+If yes → retrospective study is viable.
+If no  → the study must become prospective → **it cannot make ASPIRE 2027**.
 
-Everything else in this plan is downstream of that one question. Answer it first,
-and answer it with actual chart review, not with a recollection of what is usually
-recorded. See `studies/esi-fet/feasibility/pilot-questions.md`.
+Answer it with actual chart review, not recollection. See
+`studies/esi-fet/feasibility/pilot-questions.md`.
+
+### And a third thing that is not yet a gate but should be watched
+
+Data has **not been collected**. If it exists in Indira's systems awaiting
+extraction, the timeline below holds. If it requires manual chart abstraction per
+cycle, measure the per-record time in the pilot and multiply — that arithmetic has
+ended more projects than any statistical problem.
 
 ---
 
@@ -25,7 +42,8 @@ recorded. See `studies/esi-fet/feasibility/pilot-questions.md`.
 
 | Window | Milestone | Gate |
 |---|---|---|
-| **by 15 Sep 2026** | Pilot of 30–50 cases complete; ET2 feasibility answered; missingness quantified per field | Data access + ethics/IRB position |
+| **ASAP** | Ethics submission lodged with Indira IEC | Nothing — do this first |
+| **by 15 Sep 2026** | Pilot of 30–50 cases complete; ET2 feasibility answered; missingness quantified per field | **Ethics approval** + data access |
 | **by 30 Sep 2026** | `PROTOCOL.md` final; `SAP.md` **locked and dated** | Pilot results |
 | **by 18 Oct 2026** | Full extraction complete; de-identified dataset in `data/` | Protocol locked |
 | **by 25 Oct 2026** | Primary analysis run; spline figure and model comparison in `outputs/` | Extraction |
@@ -44,10 +62,12 @@ early.
    `venues/aspire-2027/guidelines/email-draft.md`. Until this lands, nobody knows
    the word limit, the required structure, whether structured abstracts are
    mandatory, or the prior-publication policy.
-2. **Ethics / IRB.** Retrospective chart review usually qualifies for a consent
-   waiver, but the determination has to be on file before extraction begins, and
-   institutional turnaround is frequently 4–6 weeks. This is a real risk to the
-   15 September date. Start it today.
+2. **Ethics / IRB — this is no longer parallel, it is the critical path.**
+   Submission to the Indira IVF IEC has not been made. Retrospective chart review
+   often qualifies for expedited review or a consent waiver, but the determination
+   must be on file before extraction, and turnaround depends on the committee's
+   meeting schedule rather than on how fast anyone works. See
+   `studies/esi-fet/SITE-AND-GOVERNANCE.md` for what to confirm.
 3. **Literature scan.** Build the evidence table of prior compaction and
    remodeling studies. This is what scopes the novelty claim honestly, and it is
    needed for the abstract's framing regardless of what the data shows. Run the
@@ -78,4 +98,7 @@ The third option is not a failure. It is the correct call if the data is not the
 
 | Date | Update |
 |---|---|
-| 29 Aug 2026 | Repo created. Congress facts confirmed from ASPIRE sites. Abstract guidelines not yet obtained. Pilot not started. |
+| 29 Aug 2026 | Repo created. Congress facts and inherited abstract rules confirmed. Official 2027 guidelines not yet obtained. |
+| 29 Aug 2026 | Primary endpoint changed from live birth to implantation (SPEC.md Amendment 1). |
+| 29 Aug 2026 | Data source confirmed: Indira IVF, India. Data not yet collected. Ethics not yet sought — now the critical path. |
+| 29 Aug 2026 | Literature review of prior endometrial compaction studies commissioned. |

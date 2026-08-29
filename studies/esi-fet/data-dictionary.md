@@ -24,7 +24,8 @@ are generated in analysis; raw data cannot be reconstructed once discarded.
 
 | Variable | Type | Coding / units | Notes |
 |---|---|---|---|
-| `STUDY_ID` | text | Coded | **The only patient identifier permitted.** Linkage file lives outside this repo. |
+| `STUDY_ID` | text | Coded | **The only patient identifier permitted.** Linkage file lives on Indira's systems, outside this repo. |
+| `SITE_ID` | text | Coded centre identifier | Required for the multicentre analysis. Covariate or random effect. |
 
 ## Demographics
 
@@ -160,17 +161,47 @@ See handoff §33: never hand-calculate these.
 
 ## Outcomes
 
+### Primary
+
 | Variable | Type | Coding / units |
 |---|---|---|
-| **`LIVE_BIRTH`** | binary | **0/1 — PRIMARY ENDPOINT** |
+| **`IMPLANTATION`** | binary | **0/1 — PRIMARY ENDPOINT** |
+| `FIRST_SCAN_DATE` | date | Date of the scan on which implantation was assessed |
+| `GEST_AGE_AT_SCAN` | numeric | Weeks |
+
+`IMPLANTATION` = at least one intrauterine gestational sac on transvaginal
+ultrasound at the standard first scan. **Definition pending clinician
+confirmation — see `PROTOCOL.md`.**
+
+Because the primary analysis is single embryo transfer only, per-transfer and
+per-embryo implantation are identical.
+
+**Coding rule that matters:** a cycle that was β-hCG negative and therefore never
+scanned is `IMPLANTATION = 0`, **not** `NA`. It is a confirmed implantation
+failure, not a missing observation. Getting this wrong biases the primary endpoint.
+
+### Secondary
+
+| Variable | Type | Coding / units |
+|---|---|---|
 | `BETA_HCG` | binary | 0/1 |
 | `BIOCHEMICAL_PREGNANCY` | binary | 0/1 |
 | `CLINICAL_PREGNANCY` | binary | 0/1 — predefined definition |
-| `IMPLANTATION` | binary | 0/1 (SET only) |
 | `ONGOING_PREGNANCY` | binary | 0/1 — predefined GA threshold |
 | `MISCARRIAGE` | binary | 0/1 |
+
+### Collected but NOT analysed in this study
+
+| Variable | Type | Coding / units |
+|---|---|---|
+| `LIVE_BIRTH` | binary | 0/1 |
 | `GEST_AGE_DELIVERY` | numeric | Weeks |
 | `BIRTH_WEIGHT` | numeric | Grams |
+
+Retained because a column costs nothing to carry and cannot be reconstructed later.
+The downstream Fertility & Reproduction manuscript will very likely be asked for a
+live-birth endpoint. Collect where available; leave `NA` where not. **Do not analyse
+these in the ESI study.** See `SPEC.md` Amendment 1.
 
 ---
 
@@ -199,3 +230,11 @@ Yields **ICC** for thickness and **Cohen's kappa** for pattern.
 4. What units are used locally for P4 (ng/mL vs nmol/L) and E2 (pg/mL vs pmol/L)?
 5. Is `TRANSFER_DEPTH` routinely recorded?
 6. What is the local clinical-pregnancy definition?
+7. **At what gestational age is the first scan performed, and what is recorded —
+   gestational sac, fetal pole, or cardiac activity?** This defines the primary
+   endpoint.
+8. Do ultrasound protocols differ across the participating Indira centres, and is
+   `ET1_MACHINE` / `ET1_OPERATOR` retrievable? *(Multicentre measurement variation
+   propagates directly into ESI — see `SITE-AND-GOVERNANCE.md`.)*
+9. Add `SITE_ID` — required as a covariate or random effect for a multicentre
+   analysis.
