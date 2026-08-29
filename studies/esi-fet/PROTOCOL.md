@@ -61,6 +61,8 @@ previous embryo transfers, or previous implantation failure are excluded. See
 - Single blastocyst transfer (primary analysis)
 - Endometrial measurement at/immediately before progesterone initiation
 - Repeat endometrial measurement on/around transfer day
+- **TRANSVAGINAL ultrasound at BOTH time points** — see below; this is now an
+  eligibility criterion, not merely a methods description
 - Known progesterone exposure duration
 - Known embryo grade
 - Known pregnancy outcome
@@ -72,7 +74,8 @@ Donor-oocyte cycles; gestational carriers; major Müllerian anomalies; untreated
 hydrosalpinx; untreated significant submucosal fibroid; significant untreated
 endometrial polyp; severe intrauterine adhesions; cycles without standardised ET
 measurements; missing embryo information; missing transfer outcome; double embryo
-transfers (primary analysis); **any previous IVF cycle or embryo transfer**.
+transfers (primary analysis); **any previous IVF cycle or embryo transfer**;
+**any cycle where either endometrial measurement was obtained transabdominally.**
 
 Adenomyosis, endometriosis and fibroids are **recorded, not excluded** — they can
 be adjusted for or studied as subgroups.
@@ -105,7 +108,27 @@ primary exposure.
 
 ## Ultrasound standardisation
 
-Transvaginal; standardised sagittal midline uterine plane; maximum double-layer
+### Why route is an eligibility criterion, not a detail
+
+The literature review (`literature/REPORT.md`) found that the positive compaction
+signal in this field **tracks a measurement artefact**. The influential positive
+studies (Haas 2019, Zilberberg 2020) measured transvaginally before progesterone and
+**transabdominally** on transfer day — two different acoustic windows, the second of
+which systematically under-reads thickness and thereby manufactures apparent
+compaction. Chen XT's 2023 meta-analysis quantified it: pooling only mixed-route
+studies, compaction predicted ongoing pregnancy (RR 1.69, 1.26–2.26); pooling all
+studies, it predicted nothing (live birth RR 0.97, 0.92–1.02). Studies using
+transvaginal measurement at both time points consistently find null results.
+
+Any cycle in which either measurement was transabdominal is therefore **excluded**,
+not adjusted for. Mixing routes would reproduce the field's central methodological
+error and would make this study uninterpretable regardless of what it found.
+
+This must be verified across all participating Indira centres before extraction.
+
+### Protocol
+
+Transvaginal at both time points; standardised sagittal midline uterine plane; maximum double-layer
 thickness; myometrium excluded; measured to 0.1 mm; same machine/model where
 possible; standardised bladder conditions; trained operators; defined protocol.
 
