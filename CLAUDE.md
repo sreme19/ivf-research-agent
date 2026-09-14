@@ -64,6 +64,52 @@ result and must be written up as willingly as a positive one.
 
 ---
 
+## Session discipline
+
+This repo's memory already exists and `CLAUDE.md` never named it, so a session not running
+`paper-loop` had no way to know it was there. It is:
+
+| File | Holds |
+|---|---|
+| `studies/<study>/PAPER-STATE.md` | The board — section status, data ledger, analysis queue, **Open decisions**, and the **Session log** |
+| `HANDOFF.md` | Cold start. Read first when you have no memory of the project |
+| `reference/traps-to-avoid.md` | Durable methodological findings, checked by `protocol-guard` and `aspire-compliance` |
+| `venues/` | Venue rules, quoted (hard rule 3) |
+
+### Write into the board as the work happens, not before finishing
+
+`PAPER-STATE.md` says "Update it before finishing." Do better than that: open it at the start
+and add to it as each thread closes.
+
+A session that saves the whole write-up for the end loses everything it never wrote down the
+moment it runs out of context — and the long sessions, the ones that learned the most, are
+exactly the ones that run out. Iteration 4 is the shape of the risk: a literature review that
+found the novelty claim indefensible is one paragraph in the session log, and it changes the
+whole paper. Written at the close, it exists only if the close arrives.
+
+### Wrap up unprompted, and never write a rule into this file unasked
+
+At the end of a session, without being asked, sort what was learned and say where each piece
+goes:
+
+- **a durable methodological finding** → `reference/traps-to-avoid.md`, or `venues/` if it is
+  a venue rule (quoted, never remembered);
+- **a fact about the study** → the board, the protocol, the SAP or the data dictionary,
+  whichever owns it — and note in the **Session log** row that you changed it;
+- **a decision that is the investigator's to make** → **Open decisions** on the board, with
+  its consequence, the way Q7 and Q9 are already written;
+- **a rule this repo should follow from now on** → this file.
+
+Say so explicitly when something belongs nowhere. That is a finding too.
+
+**Stop at the last one and ask.** Propose the rule, say what produced it, and wait. Recording
+what was *found* — a trap, an open decision, a session-log row — needs no permission. A rule
+in this file is a standing instruction to every future session here, written by the one party
+that will never have to live with it being wrong. That matters more than usual in a repo whose
+hard rules govern what may be claimed in a paper submitted under someone's name.
+
+---
+
 ## Working conventions
 
 - **Dates**: written in full — `6 November 2026`. Never "next month" or "in 10 weeks".
