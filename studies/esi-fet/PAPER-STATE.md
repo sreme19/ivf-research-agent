@@ -121,6 +121,7 @@ Nothing runnable — no data. Mapped to `SAP.md` sections.
 | **Q7** | **How is the study positioned given 4 meta-analyses already sit on the null?** Replication/refutation vs. novel index | The entire Introduction, Discussion and abstract framing | **Open — most important decision in the project** |
 | Q8 | Keep the name "Endometrial Stability Index"? It is compaction expressed as % change, already published under that formula | Title, reviewer credibility | Open |
 | Q9 | Restrict to euploid-only? Would occupy the strongest remaining gap but cuts N | Cohort definition, power | Open |
+| Q10 | ASPIRE 2027 closes 6 November 2026. This study cannot make it: no ethics approval, no data. Submit a different abstract, or skip ASPIRE 2027? | Next realistic venue for ESI becomes a later congress; Q5 still governs eligibility | **Open — raised 3 Nov 2026** |
 
 ---
 
@@ -148,3 +149,4 @@ Nothing runnable — no data. Mapped to `SAP.md` sections.
 | 2 | 29 Aug 2026 | First-cycle-only applied across protocol, SAP, dictionary, manuscript; SAP §5 resolved; implantation definition options presented | Q1 choice, Q6, D2, D3 |
 | 3 | 29 Aug 2026 | Primary endpoint set to β-hCG positivity (Amendment 4); raw-value + harmonised-threshold mitigations added; 6-week scan anchor recorded; data confirmed to exist | Q6, D3 |
 | 4 | 29 Aug 2026 | **Literature review complete — novelty claim not defensible as framed.** Positioning decision Q7 raised | **Q7, Q8, Q9, D11** |
+| — | 3 Nov 2026 | Side session, not a loop iteration: publication-landscape briefing for the investigator (`briefings/`). Title-level check of 61 Indira IVF items (2023–26, PubMed/Crossref) and 143 OpenAlex Indira records found **none on endometrial thickness change** — supports positioning ESI as new *within the network*, not new to the field. Investigator's one prior item: ESHRE 2025 poster P-493 (co-author, name printed "I Mekhala") | Q10 |

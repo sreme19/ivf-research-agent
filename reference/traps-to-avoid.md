@@ -58,3 +58,12 @@ Compiled from §46–48 of `inbox/2026-08-29-esi-research-handoff.md`. The
 
 20. **Do not put a number in a draft that is not traceable to `outputs/`.**
 21. **Do not commit patient data.** See `CLAUDE.md` rule 1.
+
+## Literature search
+
+22. **Do not conclude an author has no publications from a name search alone.**
+    ESHRE abstract records in *Human Reproduction* can print given and family names
+    swapped. The investigator's own ESHRE 2025 poster lists her as "I Mekhala", so a
+    PubMed author search returned nothing. Search by affiliation as well (Europe PMC
+    `AFF:`, OpenAlex `raw_affiliation_strings.search:`) and read the author lists.
+    Found 3 November 2026, after a session had already reported "no publications."
