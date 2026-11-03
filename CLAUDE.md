@@ -1,4 +1,4 @@
-# CLAUDE.md — repro-research-agent
+# CLAUDE.md — IVF Research Agent
 
 Guidance for Claude Code working in this repository.
 
