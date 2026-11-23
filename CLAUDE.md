@@ -110,6 +110,34 @@ hard rules govern what may be claimed in a paper submitted under someone's name.
 
 ---
 
+## Browser: one Chrome profile only
+
+Added November 24, 2026, at Sree's approval. Sree gave the instruction on November 23, 2026.
+
+Every browser action for this repo runs only in the Chrome profile signed in as
+`sreekanth.rnsm@gmail.com`. Do not use any other connected Chrome. This covers Instagram, journal
+sites, Google Docs and every other page.
+
+- Select the browser by device id, never by its label. "Browser 1" and "Browser 2" swap between calls.
+- Prove the profile by opening `mail.google.com`. The tab title must contain
+  `sreekanth.rnsm@gmail.com`. Read only the title, never mail. Another site's sign-in proves only that
+  site, not the Chrome profile.
+- Run the proof as a javascript step that throws on a wrong title, in the same batch as the first
+  action. Select the browser again right before each batch. In three other repos the binding flipped
+  to the wrong Chrome between calls.
+- Device ids change. Never trust a recorded id without the proof.
+- Never sign in to get past a login wall. Go to the right browser instead, and ask Sree if it also
+  shows one.
+- On social sites, read only. No comments, likes, follows or messages.
+- Close the tabs you open when the task ends.
+
+> Case (November 23, 2026): a reel was first opened in the session's default Chrome. It showed an
+> Instagram login wall, and the session reported the reel as unreadable. The rnsm profile was signed in
+> and showed the reel in full. The same session's browser connection dropped once mid-batch, and the
+> profile was proved again before the next action.
+
+---
+
 ## Working conventions
 
 - **Dates**: written in full — `6 November 2026`. Never "next month" or "in 10 weeks".
